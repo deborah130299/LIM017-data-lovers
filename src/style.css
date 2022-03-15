@@ -1,0 +1,17 @@
+#bienvenida{
+    display :block;
+    }
+    
+#datos{
+    display: none;
+    }
+body{
+    background-image: url(data/img/im1.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+    height: 900px;
+    background-position: center;
+  
+} 
+
+    

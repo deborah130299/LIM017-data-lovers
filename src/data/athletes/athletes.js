@@ -4,7 +4,7 @@ export default {
   "season": "summer",
   "city": "Rio de Janeiro",
   "athletes": [
-    {
+ /*    {
       "name": "Giovanni Abagnale",
       "gender": "M",
       "height": "198",
@@ -22023,7 +22023,7 @@ export default {
       "age": 26,
       "event": "Hockey Women's Hockey",
       "medal": "Silver"
-    },
+    }, */
     {
       "name": "Jelle van Gorkom",
       "gender": "M",
