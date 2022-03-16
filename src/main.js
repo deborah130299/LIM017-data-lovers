@@ -14,32 +14,20 @@ const tableBody = document.querySelector('tbody')
 const allAthletes = (index)=>{
     return `
     <tr>
+    <td>${index.name}</td>
     <td>${index.team}</td>
     <td>${index.sport}</td>
     <td>${index.medal}</td>
     </tr>
     `;
 }
-
 const printScreen = (mostrar) => {
     tableBody.innerHTML = '';
     mostrar.forEach ((z)=>{
         tableBody.innerHTML += allAthletes(z);
     })
 }
-
 printScreen (athletes);
-
-/*for (let index = 0; index < athletes.length; index++) {
-  
-    tableBody.innerHTML += `
-    <tr>
-    <td>${athletes[index].team}</td>
-    <td>${athletes[index].sport}</td>              
-    <td>${athletes[index].medal}</td>
-    </tr>
-    `;
-}*/
 
 const str=document.getElementById('disciplinas');
 str.addEventListener('change',(x)=>{
@@ -47,14 +35,32 @@ str.addEventListener('change',(x)=>{
     printScreen(selectSport)
 })
 
-/*const btnSearch = document.getElementsByClassName('search1');
-btnSearch.addEventListener('click',() => {
-    document.getElementById('bienvenida').style.display='none';
-    document.getElementById('datos').style.display='block';
-} */
-
-
-
 //console.log(data);
 console.log(filterSport(athletes,"Archery"));
+
+
+
+
+
+
+
+
+var animateButton = function(e) {
+
+    e.preventDefault;
+    //reset animation
+    e.target.classList.remove('animate');
+    
+    e.target.classList.add('animate');
+    setTimeout(function(){
+      e.target.classList.remove('animate');
+    },700);
+  };
+  
+
+
+  var bubblyButtons = document.getElementsByClassName("inicio");
+    for (var i = 0; i < bubblyButtons.length; i++) {
+    bubblyButtons[i].addEventListener('click', animateButton, false);
+  }
 

@@ -4,7 +4,7 @@ export default {
   "season": "summer",
   "city": "Rio de Janeiro",
   "athletes": [
- /*    {
+     {
       "name": "Giovanni Abagnale",
       "gender": "M",
       "height": "198",
@@ -3076,7 +3076,7 @@ export default {
       "event": "Diving Men's Synchronized Springboard",
       "medal": "Bronze"
     },
-    {
+   /* {
       "name": "Jazmin Roxy \"Jazz\" Carlin",
       "gender": "F",
       "height": "175",
@@ -10840,7 +10840,7 @@ export default {
       "event": "Judo Men's Half-Heavyweight",
       "medal": "Gold"
     },
-    {
+     {
       "name": "Sinphet Kruaithong",
       "gender": "M",
       "height": "159",
@@ -22023,7 +22023,7 @@ export default {
       "age": 26,
       "event": "Hockey Women's Hockey",
       "medal": "Silver"
-    }, */
+    }, 
     {
       "name": "Jelle van Gorkom",
       "gender": "M",
@@ -24279,6 +24279,6 @@ export default {
       "age": 29,
       "event": "Hockey Men's Hockey",
       "medal": "Bronze"
-    }
+    } */
   ]
 }
