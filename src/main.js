@@ -1,4 +1,4 @@
-import  { filterSport, sortData , computeStats }  from './data.js';
+import  { filterSport, filterPais, sortData , computeStats }  from './data.js';
 import gameData from './data/athletes/athletes.js';
 
 const athletes = gameData.athletes;
@@ -35,8 +35,15 @@ str.addEventListener('change',(x)=>{
     printScreen(selectSport)
 })
 
+const str2=document.getElementById('paises');
+str2.addEventListener('change',(x)=>{
+    const selectPais=filterPais(athletes,x.target.value);
+    printScreen(selectPais)
+})
+
+
 //console.log(data);
-console.log(filterSport(athletes,"Archery"));
+//console.log(filterSport(athletes,"Archery"));
 
 
 
