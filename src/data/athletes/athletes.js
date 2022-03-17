@@ -3076,7 +3076,7 @@ export default {
       "event": "Diving Men's Synchronized Springboard",
       "medal": "Bronze"
     },
-   /* {
+    {
       "name": "Jazmin Roxy \"Jazz\" Carlin",
       "gender": "F",
       "height": "175",
@@ -9460,7 +9460,7 @@ export default {
       "event": "Sailing Men's Skiff",
       "medal": "Silver"
     },
-    {
+    /*{
       "name": "Jeong Bo-Kyeong",
       "gender": "F",
       "height": "153",
