@@ -35,6 +35,45 @@ margin:-8px;
         align-items: center; */
 }
 
+#contenedorGeneral{
+    margin: 150px auto;
+    width: 600px;
+}
+
+table{
+    background-color: rgb(141, 236, 145);
+    text-align: left;
+    border-collapse: collapse;
+    width:100%;
+}
+
+th,td{
+    border: solid 1px black;
+    padding: 10px;
+}
+
+thead{
+    background-color:rgb(34, 153, 40);
+    border-bottom: solid 5px #0F362D;
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: #ddd;
+}
+
+tr:hover td{
+    background-color: #369681;
+    color: white;
+}
+
+.container-fondo{
+    flex-direction: row-reverse;
+    background: url("Imagenes/fondo.png") no-repeat bottom right;
+    background-size: 400px;
+
+}
+
 #inicio {
 width: 200px;
 height: 70px;
@@ -58,10 +97,8 @@ padding-left: -30px;
 margin: 100px;
 }
 
-
 header{
-    
-    color:rgb(255, 208, 1);
+     color:rgb(255, 208, 1);
     font-family: Capriola, sans-serif;
     display: flex;
      background-color: rgb(26, 126, 79); 
@@ -101,10 +138,7 @@ header{
     /* padding-left: -30px; */
     margin: 10px;
     }
-
-
-
-#medallas{
+#medals, #Gender, #Ordenador  {
     
         width: 180px;
         height: 30px;
@@ -128,8 +162,6 @@ header{
         margin: 100px; */
      
 }
-
-
 h3{
     align-content: center;
     display:flex;
@@ -165,4 +197,33 @@ h3{
     transform: translateY(-7px);   
 }
 
-}
+#Ordenador{
+    width: 180px;
+    height: 30px;
+    font-family: 'Capriola', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: rgb(33, 78, 161);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid;
+    border-radius: 25px;
+    box-shadow: 0px 8px 15px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    /* outline: none; */
+    /* margin-left:auto ; */
+    /* margin: -20px; */
+    font-family: Capriola, sans-serif;
+    /* padding-left: -30px;
+    margin: 100px; */
+    }
+   
+    footer{
+        text-align: center;
+        color: #ffff;
+        background-color: rgb(17, 16, 16);
+        padding:20px 0;
+    
+    }

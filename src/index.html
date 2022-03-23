@@ -5,8 +5,16 @@
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Capriola&display=swap" rel="stylesheet">
-
   </head>
+  <header>
+    <nav class="navbar" src="Imag_Proy/olimpiadas-07.gif">
+			<div class="contenedor">
+				<a href="#">Inicio</a>
+				<a href="#">Medallistas</a>
+				<a href="#">Resumen</a>
+			</div>
+		</nav>
+  </header>
   <body>
     <!-- <div id="root"></div> -->
     <section id="bienvenida">
@@ -16,11 +24,8 @@
     </section>
 
     <section id="datos">
-      <header>
-        <h1 class="menuh2"> OLIMPIADAS RIO 2016</h1>
-        <h2 class="menuh2"> OLIMPIADAS RIO 2019</h2>
-        <h3 class="menuh2"> OLIMPIADAS qatar 2023</h3>
-      </header>
+     
+      
       <div id="contenedorGeneral">
                  <!-- Filtro por paises -->
           <select id="paises"  class="paises" name="paises">
@@ -157,20 +162,40 @@
             <option value="Wrestling">Wrestling</option>        
            </option>
           </select>
-          <select id="medallas" class="medallas" name="medallas"> 
+          <!-- <select id="medallas" class="medallas" name="medallas"> 
             <option value="medal">MEDALLAS</option>
             <option value="Gold">Gold</option>
             <option value="Silver">Silver</option>
             <option value="Bronze">Bronze</option>
+          </select> -->
+          <select id="Ordenador" class="Ordenador" name="Ordenador">
+            <option disabled selected>Ordenar</option>
+            <option class="opcion" value="A-Z">A-Z</option>
+            <option class="opcion" value="Z-A">Z-A</option>
           </select>
-                 <!-- <button id="botongrafico" class="botongrafico">Buscar</i></button> -->
-            <table>
+
+          <select id="medals" class="medallas" name="medallas"> 
+            <option value="medallas">MEDALLAS</option>
+            <option value="Gold">Gold</option>
+            <option value="Silver">Silver</option>
+            <option value="Bronze">Bronze</option>
+          </select>
+
+
+          <select id="Gender" class="Gender" name="Gender">
+            <option disabled selected>Genero</option> 
+            <option class="opcion" value="F" id="female">Femenino</option>
+            <option class="opcion" value="M" id="male">Masculino</option> 
+           </select> 
+                 
+            <table >
             <thead>
               <tr>
                 <th>Nombre</th>
                 <th>Pais</th>
                 <th>Disciplina</th>
                 <th>Medallas</th>
+                <th>Genero</th>
               </tr>
             </thead>
             
@@ -180,7 +205,8 @@
             </table>  
       </div>
     </section>
-     
-     <script src="main.js" type="module"></script>
+  
+    <footer> TM © Comité Olímpico Internacional. Todos los derechos reservados ❤@RF @DM @TC❤</footer> 
+    <script src="main.js" type="module"></script>
   </body>
 </html>
