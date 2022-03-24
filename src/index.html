@@ -6,15 +6,27 @@
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Capriola&display=swap" rel="stylesheet">
   </head>
-  <header>
-    <nav class="navbar" src="Imag_Proy/olimpiadas-07.gif">
+  <!-- <header>
+    <nav class="navbar">
+      <div>
+        <img class="logo" src="Imag_Proy/rio3.png" alt="" srcset="">
+      </div>
 			<div class="contenedor">
 				<a href="#">Inicio</a>
 				<a href="#">Medallistas</a>
 				<a href="#">Resumen</a>
-			</div>
+			</div> 
+      <a href="" class="logo">Olimpiadas Rio 2016 </a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li><a href="#work">Inicio</a></li>
+      <li><a href="#about">Medallistas</a></li>
+      <li><a href="#careers">Resumen</a></li>
+    </ul>
+  
 		</nav>
-  </header>
+  </header> -->
   <body>
     <!-- <div id="root"></div> -->
     <section id="bienvenida">
@@ -24,8 +36,6 @@
     </section>
 
     <section id="datos">
-     
-      
       <div id="contenedorGeneral">
                  <!-- Filtro por paises -->
           <select id="paises"  class="paises" name="paises">
@@ -160,7 +170,7 @@
             <option value="Volleyball">Volleyball</option>
             <option value="Weightlifting">Weightlifting</option>
             <option value="Wrestling">Wrestling</option>        
-           </option>
+           
           </select>
           <!-- <select id="medallas" class="medallas" name="medallas"> 
             <option value="medal">MEDALLAS</option>
@@ -200,13 +210,16 @@
             </thead>
             
             <tbody>
-              <H3>RESUMEN</H3>
+              <h3>RESUMEN</h3>
             </tbody>
             </table>  
       </div>
     </section>
   
     <footer> TM © Comité Olímpico Internacional. Todos los derechos reservados ❤@RF @DM @TC❤</footer> 
-    <script src="main.js" type="module"></script>
+    <script>
+        import { init } from './main.js';
+        init();
+    </script>
   </body>
 </html>

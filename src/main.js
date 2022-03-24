@@ -1,6 +1,8 @@
 import  { filterSport, filterPais,filterMedals, sortData, filterG  }  from './data.js';
 import gameData from './data/athletes/athletes.js';
 
+export const init = () => {
+    
 const athletes = gameData.athletes;
 
 const enterBtn=document.getElementById('inicio') 
@@ -91,4 +93,7 @@ var animateButton = function(e) {
     for (var i = 0; i < bubblyButtons.length; i++) {
     bubblyButtons[i].addEventListener('click', animateButton, false);
   }
+}
 
+
+  export const sum = (num1, num2) => num1 + num2;
