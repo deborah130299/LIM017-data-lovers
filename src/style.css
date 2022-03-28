@@ -1,3 +1,136 @@
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background-color: #FFFFFF;
+  position:relative;
+  padding-bottom: 3em;
+  min-height: 100vh;
+  margin-top: auto;
+  border: 10px solid rgb(248, 245, 245);
+}
+a {
+    color: #ffffff;
+  }
+.logo{
+    max-height: 38px;
+      display:flex;
+      justify-content:center;
+      align-content:center;    
+    }
+ .header {
+      background-color: #ffffff;
+      box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+      position: fixed;
+      width: 100%;
+      z-index: 3;
+}
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #15b300;
+}
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #ff6714;
+}
+/* menu */
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+  background-color: #db6a00;
+
+}
+/* menu icon */
+.header .menu-icon {
+  cursor: pointer;
+  /* display: inline-block; */
+ float: right;  
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+.header .menu-icon .navicon {
+  background: #383134;
+  display: block;
+  height: 10px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 20px;
+}
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #ffa552;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+.header .menu-icon .navicon:before {
+  top: 10px;
+}
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+.header .menu-btn {
+  display: none;
+}
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
 
 #bienvenida{
     display :block;
@@ -10,29 +143,65 @@
     display:flex;
     justify-content: flex-end;
     align-items: center;
-    /* margin-left: 30px; */
+    
     }
 #datos{
 display: none;
 height: 930px;
-background-image: url(data/img/im4.png);
+background-image: url(Imag_Proy/fondo\ dibujitos.jpg);
 background-size: cover;
 background-repeat:no-repeat; 
 background-position: center; 
 margin:-8px; 
 }
 #datos{
-    margin-top: -40px;
+   /*  margin-top: -40px;
     margin-left: -8px;
-    margin-right: -30px;
-    /* align-items: center; */
+    margin-right: -30px; */
+
     padding:20px;
     font-family: 'Capriola', sans-serif;
     font-size: 16px;
-    /* display:flex; 
-    /* position : absolute; */
-    /* justify-content: flex-end;
-        align-items: center; */
+
+}
+
+#contenedorGeneral{
+    margin: 150px auto;
+    width: 600px;
+}
+
+table{
+    background-color: rgb(141, 236, 145);
+    text-align: left;
+    border-collapse: collapse;
+    width:100%;
+}
+
+th,td{
+    border: solid 1px black;
+    padding: 10px;
+}
+
+thead{
+    background-color:rgb(236, 138, 10);
+    border-bottom: solid 5px #0F362D;
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: rgb(212, 208, 199);
+}
+
+tr:hover td{
+    background-color: #70bdac;
+    color: white;
+}
+
+.container-fondo{
+    flex-direction: row-reverse;
+    background: url("Imagenes/fondo.png") no-repeat bottom right;
+    background-size: 400px;
+
 }
 
 #inicio {
@@ -50,93 +219,17 @@ border-radius: 45px;
 box-shadow: 0px 8px 15px rgba(255, 255, 255, 0.1);
 transition: all 0.3s ease 0s;
 cursor: pointer;
-/* outline: none; */
-/* margin-left:auto ; */
-/* margin: -20px; */
 font-family: Capriola, sans-serif;
 padding-left: -30px;
 margin: 100px;
 }
-
-
-header{
-    
-    color:rgb(255, 208, 1);
-    font-family: Capriola, sans-serif;
-    display: flex;
-     background-color: rgb(26, 126, 79); 
-    /* background-image: url(img/im1.jpg); */
-    background-position: center;
-    /* margin-top:auto; */
-    display:flex;
-    justify-content: center;
-    /* align-items: center; */
-    height: 70px;
-    /* width: 100%; */
-    padding: 0px;
-    align-items: stretch;
-    margin-left: -30px;
-    margin-right: -8px;
-}
-
-#disciplinas{
-    width: 180px;
-    height: 30px;
-    font-family: 'Capriola', sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    /* font-weight: 500; */
-    color: rgb(33, 78, 161);
-    background-color: rgb(255, 255, 255);
-    border: 1px solid;
-    border-radius: 25px;
-    box-shadow: 0px 8px 15px rgba(255, 255, 255, 0.1);
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-    /* outline: none; */
-    /* margin-left:auto ; */
-    /* margin: -20px; */
-    font-family: Capriola, sans-serif;
-    /* padding-left: -30px; */
-    margin: 10px;
-    }
-
-
-
-#medallas{
-    
-        width: 180px;
-        height: 30px;
-        font-family: 'Capriola', sans-serif;
-        font-size: 18px;
-        text-transform: uppercase;
-        letter-spacing: 2.5px;
-        font-weight: 500;
-        color: rgb(33, 78, 161);
-        background-color: rgb(255, 255, 255);
-        border: 1px solid;
-        border-radius: 25px;
-        box-shadow: 0px 8px 15px rgba(255, 255, 255, 0.1);
-        transition: all 0.3s ease 0s;
-        cursor: pointer;
-        /* outline: none; */
-        /* margin-left:auto ; */
-        /* margin: -20px; */
-        font-family: Capriola, sans-serif;
-        /* padding-left: -30px;
-        margin: 100px; */
-     
-}
-
-
 h3{
     align-content: center;
     display:flex;
     justify-content: center;
 }
 
-#paises{
+#paises,#Gender,#medals,#disciplinas,#Ordenador{
     width: 180px;
     height: 30px;
     font-family: 'Capriola', sans-serif;
@@ -151,18 +244,30 @@ h3{
     box-shadow: 0px 8px 15px rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease 0s;
     cursor: pointer;
-    /* outline: none; */
-    /* margin-left:auto ; */
-    /* margin: -20px; */
+    
     font-family: Capriola, sans-serif;
-    /* padding-left: -30px;
-    margin: 100px; */
+    
     }
     #inicio:hover {
-    background-color: #f7787e;
+    background-color: #4e4e4e;
     box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
     color: #fff;
     transform: translateY(-7px);   
 }
 
-}
+    .footer{
+
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        color: #ffff;
+        background-color: rgb(17, 16, 16);
+        /* padding:20px 0; */
+        /* margin: -8px; */
+        
+    }
+
+
+ 
