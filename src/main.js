@@ -1,7 +1,7 @@
 import  { filterSport, filterPais,filterMedals, sortData, filterG  }  from './data.js';
 import gameData from './data/athletes/athletes.js';
 
-export const init = () => {
+//export const init = () => {
     
 const athletes = gameData.athletes;
 
@@ -50,19 +50,6 @@ str3.addEventListener('change',(x)=>{
     printScreen(selectMedals)
 })
 
-
-/* const str5=document.getElementById("Gender");
-str5.addEventListener('change',(x)=>{
-    const selectGenderF=filterF(athletes,x.target.value);
-    printScreen(selectGenderF)
-}) */
-
-/* const str6=document.getElementById("Gender");
-str6.addEventListener('change',(x)=>{
-    const selectGenderM=filterM(athletes,x.target.value);
-    printScreen(selectGenderM) 
-})*/
-
 const str4=document.getElementById('Ordenador');
 str4.addEventListener('change',(x)=>{
     const selectName=sortData(athletes,x.target.value);
@@ -74,8 +61,7 @@ str5.addEventListener('change',(x)=>{
     const selectG=filterG(athletes,x.target.value);
     printScreen(selectG)
 })
-//console.log(data);
-//console.log(filterSport(athletes,"Archery"));
+
 //Efectos boton
 var animateButton = function(e) {
 
@@ -93,7 +79,7 @@ var animateButton = function(e) {
     for (var i = 0; i < bubblyButtons.length; i++) {
     bubblyButtons[i].addEventListener('click', animateButton, false);
   }
-}
+//}
 
 
   export const sum = (num1, num2) => num1 + num2;

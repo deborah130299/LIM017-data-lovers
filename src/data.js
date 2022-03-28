@@ -12,21 +12,7 @@ export const filterSport =(athletes, str) => {
     return resultByTeam;
    //return athletes.filter(athletes => athletes.sport == str)
  }
- 
-
-
- //export const  filterData = (data, condition) => {
-   
- /*   return 'example';
- }; */
- 
-/* export const filterF = (data) => {
-  return data.filter((athletes)=>athletes.gender.includes("F"));
-};
-export const filterM = (data) => {
-  return data.filter((athletes)=>athletes.gender.includes("M"));
-}; */
-
+  
 export const filterMedals =(athletes, str3) => {
   const resultByMedals=athletes.filter(x=>x.medal===str3)
     return resultByMedals;
@@ -38,7 +24,6 @@ export const filterMedals =(athletes, str3) => {
     return resultByGender;
    //return athletes.filter(athletes => athletes.sport == str)
  }
-
 
  export const sortData = (data, sortOrder) => {
    const ordenado=
@@ -59,8 +44,6 @@ export const filterMedals =(athletes, str3) => {
     return ordenado.reverse();
   }
 };
-
-
  /* export const computeStats = (data) => {
    return 'OMG';
  };
