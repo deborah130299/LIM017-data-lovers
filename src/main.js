@@ -12,6 +12,20 @@ function nombreFn () {
     document.getElementById('datos').style.display='block';  
 }
 
+
+const enterResumen=document.getElementById('resumen') 
+enterResumen.addEventListener('click',resumenTotal)
+function resumenTotal () {
+    document.getElementById('bienvenida').style.display='none';
+    document.getElementById('datos').style.display='none';
+    document.getElementById('resumen').style.display='block';
+}
+
+
+
+
+
+
 const tableBody = document.querySelector('tbody')
 const allAthletes = (index)=>{
     return `
