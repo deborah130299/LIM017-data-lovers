@@ -145,6 +145,10 @@ a {
     align-items: center;
     
     }
+
+    #resumen{
+      display:none;
+    }
 #datos{
 display: none;
 height: 930px;
@@ -179,7 +183,7 @@ table{
 
 th,td{
     border: solid 1px black;
-    padding: 10px;
+    padding: 30px;
 }
 
 thead{
@@ -195,6 +199,10 @@ tr:nth-child(even){
 tr:hover td{
     background-color: #70bdac;
     color: white;
+}
+
+tr:hover {
+  background: #383134;
 }
 
 .container-fondo{
