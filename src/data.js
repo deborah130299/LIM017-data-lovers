@@ -44,7 +44,21 @@ export const filterMedals =(athletes, str3) => {
     return ordenado.reverse();
   }
 };
- /* export const computeStats = (data) => {
-   return 'OMG';
- };
-  */
+
+
+         /* COMPUTE STATES */
+export const computeStats =(arrayFemale,arrayMale,arrayTotal)=>{
+const countFemale=arrayFemale.length;
+const countMale=arrayMale.length;
+const countTotal=arrayTotal.length;
+const percentFemale=Math.round((countFemale/countTotal)*100);
+const percentMale=Math.round((countMale/countTotal)*100);
+
+let array =[percentFemale, percentMale];
+return array;
+}
+
+
+
+
+

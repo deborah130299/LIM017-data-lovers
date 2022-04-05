@@ -5,6 +5,9 @@
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Capriola&display=swap" rel="stylesheet">
+    <meta name="'viewport" content="width=device-width, initial-scale=1"/>
+
+
   </head>
   <header class="header">
     <div><img class="logo" src="data/img/rio3.png" alt="" srcset=""> </div>
@@ -12,25 +15,38 @@
     <input class="menu-btn" type="checkbox" id="menu-btn" />
     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
     <ul class="menu">
-      <li><a href="#work">Inicio</a></li>
-      <li><a href="#about">Medallistas</a></li>
-      <li><a href="#careers">Resumen</a></li>
+      <li><a type="button" value="Inicio" class="button" id="menuinicio">Inicio</a></li>
+      <li><a type="button" value="Medallistas" class="button" id="menumedallas">Medallas</a></li>
+      <li><a type="button" value="Resumen" class="button" id="menuresumen">Resumen</a></li>
     </ul>
   </header>
   <body>
     <!-- <div id="root"></div> -->
     <section id="bienvenida">
-      <div class="contenedor">
-        <button type="submit" id="inicio" class="search1"> <strong>SABER MÁS</strong>  </button>
+ 
+      <div id="videorio2016">
+        <video autoplay muted loop id="myVideo">
+          <source src="data/img/Best of Rio 2016 _ OIympic Games.mp4" type="video/mp4">
+        </video>
+        <div class="content">
+          <h1>Sabias qué ...</h1>
+          <p>     Río 2016, fue un evento multideportivo internacional, celebrado en la ciudad de
+                  Río de Janeiro, Brasil, entre el 5 y el 21 de agosto de 2016, aunque la fase de grupos del torneo de fútbol
+                  comenzó el 3 de agosto en la rama femenina y el 4 de agosto en la rama masculina.
+                  También se realizaron en dicha ciudad los XV Juegos Paralímpicos, entre el 7 y el 18 de septiembre del mismo año.
+                  En esta edición de los Juegos Olímpicos participaron 11 551 atletas de 207 comités olímpicos nacionales.  </p>
+            
+        </div>
       </div>
     </section>
 
     <section id="datos">
+      <div class="img" src="data/img/Aros2.jpg" > </div>
       <div id="contenedorGeneral">
+        
                  <!-- Filtro por paises -->
           <select id="paises"  class="paises" name="paises">
             <option value="paises">Países</option> 
-            
             <option value="Algeria">Algeria</option>
             <option value="Argentina">Argentina</option>
             <option value="Armenian">Armenian </option>
@@ -41,7 +57,7 @@
             <option value="Bahrain">Bahrain </option>
             <option value="Belgium">Belgium</option>
             <option value="Belarus">Belarus</option>
-            <option value="Brazil">Brazil</option>
+            <option value="Brazil" >Brazil</option>
             <option value="Bulgarian">Bulgarian</option>
             <option value="Germany">Germany </option>
             <option value="Burundi">Burundi</option>
@@ -121,45 +137,47 @@
          <!-- Filtro por deportes -->
           <select id="disciplinas" class="disciplinas" name="disciplinas"> 
             <option value="athletes" disabled selected >Disciplinas</option> 
-            <option value="Rowing">Rowing</option>
-            <option value="Taekwondo">Taekwondo</option>
-            <option value="Handball">Handball</option>
-            <option value="Wrestling">Wrestling</option> 
-            <option value="Archery">Archery</option>
-            <option value="Athletics">Athletics</option>
-            <option value="Badminton">Badminton</option>
-            <option value="Basketball">Basketball</option>
-            <option value="Beach Volleyball">Beach Volleyball</option>
-            <option value="Boxing">Boxing</option>
-            <option value="Canoeing">Canoeing</option>
-            <option value="Cycling">Cycling</option>
-            <option value="Diving">Diving</option>
-            <option value="Equestrianism">Equestrianism</option>
-            <option value="Fencing">Fencing</option>
-            <option value="Football">Football</option>
-            <option value="Golf">Golf</option>
-            <option value="Rhythmic Gymnastics">Rhythmic Gymnastics</option>
-            <option value="Gymnastics">Gymnastics</option>
-            <option value="Handball"> Handball</option>
-            <option value="Hockey">Hockey</option>
-            <option value="Judo">Judo</option>
-            <option value="Modern Pentathlon">Modern Pentathlon</option>
-            <option value="Rowing"> Rowing</option>
-            <option value="Rugby Sevens">Rugby Sevens</option>
-            <option value="Sailing">Sailing</option>
-            <option value="Shooting">Shooting</option>
+            <option value="Rowing">Rowing 🚣‍♂️</option>
+            <option value="Taekwondo">Taekwondo🥋</option>
+            <option value="Handball">Handball🤾</option>
+            <option value="Wrestling">Wrestling🤼‍♂</option> 
+            <option value="Archery">Archery🏹</option>
+            <option value="Athletics">Athletics🏃</option>
+            <option value="Badminton">Badminton🏸</option>
+            <option value="Basketball">Basketball🏀</option>
+            <option value="Beach Volleyball">Beach Volleyball🏐🏖</option>
+            <option value="Boxing">Boxing🥊</option>
+            <option value="Canoeing">Canoeing🚣‍♂</option>
+            <option value="Cycling">Cycling🚴‍♂️</option>
+            <option value="Diving">Diving🤿</option>
+            <option value="Equestrianism">Equestrianism🏇</option>
+            <option value="Fencing">Fencing🤺</option>
+            <option value="Football">Football⚽</option>
+            <option value="Golf">Golf⛳</option>
+            <option value="Rhythmic Gymnastics">Rhythmic Gymnastics🤸</option>
+            <option value="Gymnastics">Gymnastics🤸‍♂</option>
+            <option value="Handball"> Handball🤾</option>
+            <option value="Hockey">Hockey🏒</option>
+            <option value="Judo">Judo🥋</option>
+            <option value="Modern Pentathlon">Modern Pentathlon🎽</option>
+            <option value="Rowing"> Rowing🚣</option>
+            <option value="Rugby Sevens">Rugby Sevens🏉</option>
+            <option value="Sailing">Sailing⛵</option>
+            <option value="Shooting">Shooting🔫</option>
             <option value="Synchronized Swimming">Synchronized Swimming</option>
-            <option value="Swimming">Swimming</option>
-            <option value="Table Tennis">Table Tennis</option>
-            <option value="Taekwondo">Taekwondo</option>
-            <option value="Table Tennis">Table Tennis </option>
-            <option value="Tennis">Tennis</option>
-            <option value="Trampolining">Trampolining</option>
-            <option value="Volleyball">Volleyball</option>
-            <option value="Water Polo">Water Polo</option>
-            <option value="Volleyball">Volleyball</option>
-            <option value="Weightlifting">Weightlifting</option>
-            <option value="Wrestling">Wrestling</option>        
+            <option value="Swimming">Swimming🏊</option>
+            <option value="Table Tennis">Table Tennis🎾</option>
+            <option value="Taekwondo">Taekwondo🥋</option>
+            <option value="Table Tennis">Table Tennis🎾</option>
+            <option value="Tennis">Tennis🎾</option>
+            <option value="Trampolining">Trampolining🤸</option>
+            <option value="Volleyball">Volleyball🏐</option>
+            <option value="Water Polo">Water Polo🤽</option>
+            <option value="Volleyball">Volleyball🏐</option>
+            <option value="Weightlifting">Weightlifting🏋‍♂</option>
+            <option value="Wrestling">Wrestling🤼</option>        
+           
+
            
           </select>
           <!-- <select id="medallas" class="medallas" name="medallas"> 
@@ -176,20 +194,21 @@
 
           <select id="medals" class="medallas" name="medallas"> 
             <option value="medallas">MEDALLAS</option>
-            <option value="Gold">Gold</option>
-            <option value="Silver">Silver</option>
-            <option value="Bronze">Bronze</option>
+            <option value="Gold">Gold 🥇</option>
+            <option value="Silver">Silver 🥈</option>
+            <option value="Bronze">Bronze 🥉</option>
           </select>
 
 
           <select id="Gender" class="Gender" name="Gender">
             <option disabled selected>Genero</option> 
-            <option class="opcion" value="F" id="female">Femenino</option>
-            <option class="opcion" value="M" id="male">Masculino</option> 
+            <option class="opcion" value="F" id="female">Femenino 🙋‍♀️ </option>
+            <option class="opcion" value="M" id="male">Masculino 🙋‍♂️ </option> 
            </select> 
                  
             <table >
             <thead>
+              
               <tr>
                 <th>Nombre</th>
                 <th>Pais</th>
@@ -200,11 +219,39 @@
             </thead>
             
             <tbody>
-              <h3>RESUMEN</h3>
+              <h3 >RESUMEN</h3>
             </tbody>
             </table>  
       </div>
     </section>
+
+    <section id="Resumen">
+      <div id="carrusel">
+        <div class="container">
+  
+          <ul class="slider">
+            <li class="mySlides fade">
+              <img src="data/img/gimnastas.jpeg" />
+            </li>
+            <li class="mySlides fade">
+              <img src="data/img/CARRU1.jpg" />
+            </li>
+            <li class="mySlides fade">
+              <img src="data/img/carru4.png" />
+            </li>
+          </ul>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          
+
+
+
+        </div>
+  
+      </div>
+        <div id="stadistic"></div>
+    </section>
+  
 
   <div class="footer">
     <p> TM © Comité Olímpico Internacional. Todos los derechos reservados ❤@RF @DM @TC❤</p> 
