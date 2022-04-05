@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: Helvetica, sans-serif;
@@ -133,9 +138,9 @@ a {
 }
 
 #bienvenida{
-    display :block;
+    display :none;
     height: 930px;
-    background-image: url(data/img/im1.jpg);
+   /* background-image: url(data/img/im1.jpg);*/
     background-size: cover;
     background-repeat:no-repeat;
     background-position: center;
@@ -144,6 +149,10 @@ a {
     justify-content: flex-end;
     align-items: center;
     
+    }
+
+    #resumen{
+      display:none;
     }
 #datos{
 display: none;
@@ -179,7 +188,7 @@ table{
 
 th,td{
     border: solid 1px black;
-    padding: 10px;
+    padding: 30px;
 }
 
 thead{
@@ -195,6 +204,10 @@ tr:nth-child(even){
 tr:hover td{
     background-color: #70bdac;
     color: white;
+}
+
+tr:hover {
+  background: #383134;
 }
 
 .container-fondo{
@@ -269,6 +282,131 @@ h3{
         /* margin: -8px; */
         
     }
+/*carrusel*/
+#carrusel{
+    top: 50px;
+}
+#carrusel{
+    display: none;
+}
+  .container{
 
+   background-color: white;
+    width: 1350px;
+        position:relative;
+       height:150px;
+      background: cover;
+      
+      }
+      .slideshow-container{
+       max-width: 1000px;
+       position:relative;
+              background-size: cover;
+              background-position: center;
+             
+      }
+      ul, li {
+          padding: 0;
+          margin: 0;
+          list-style: none;
+      }
+      
+      ul.slider li img{
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+      
+      }
+              .mySlider {
+                  position: relative;
+                  visibility: hidden;
+                  opacity: 0;
+              }
+      .mySlides{
+       display:none;
+      }		
+       .prev, .next{
+              cursor:pointer;
+              position:absolute;
+              top:200%;
+              width:auto;
+              padding:16px;
+              color:white;
+              font-weight:bold;
+              font-size:18px;
+              transition:0.6s ease;
+              border-radius:0 3px 3px 0;
+             }
+             .next{
+              right:0;
+              border-radius:3px 0 0 3px;
+             }
+            .prev{
+              left:0;
+              border-radius:3px 0 0 3px;
+             }
+    
+             .prev:hover, .next:hover{
+              background-color:rgba(0,0,0,0.8);
+             }
+     .fade{
+       animation-duration:1.5s;
+             }
+             /*video*/
+             #videorio2016{
+                 display:block;
+             }
 
+             #myVideo {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                min-width: 100%; 
+                min-height: 100%;
+              }
+              
+              .content {
+                position: absolute;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.5);
+                color: #f1f1f1;
+                width: 100%;
+                padding: 20px;
+              }
+              
+              #myBtn {
+                width: 200px;
+                font-size: 18px;
+                padding: 10px;
+                border: none;
+                background: #000;
+                color: #fff;
+                cursor: pointer;
+              }
+              
+              #myBtn:hover {
+                background: #ddd;
+                color: black;
+              }
  
+
+              
+.content2{
+display:flex;
+justify-content:space-evenly;
+background-color:green;
+border-radius:5px;
+border:blue 1px solid;
+padding:10px;
+position: absolute;
+top: 100px;
+}
+.content2 > div{
+border:black 3px solid;
+padding:10px;
+border-radius:5px;
+background-color:white;
+margin: 5%;
+justify-content:space-between;
+justify-content:space-around;
+}
