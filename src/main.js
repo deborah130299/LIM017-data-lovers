@@ -1,48 +1,38 @@
 import  { filterSport, filterPais,filterMedals, sortData, filterG , computeStats }  from './data.js';
 import gameData from './data/athletes/athletes.js';
-const btninicio = document.getElementById("menuinicio");
-const btnmedallas = document.getElementById("menumedallas");
-const btnresume = document.getElementById("menuresumen");
-// Eventos de la HomePage
-btninicio.addEventListener("click", showinicio);
-btnmedallas.addEventListener("click", showSports);
+const btnstart = document.getElementById("menuStart");
+const btnmedals = document.getElementById("medalsMenu");
+const btnresume = document.getElementById("menuSummary");
+ /* EVENTS OF HOME PAGE */
+btnstart.addEventListener("click", showstart);
+btnmedals.addEventListener("click", showSports);
 btnresume.addEventListener("click", showstadistics);
 
-function showinicio() {
-    document.getElementById('bienvenida').style.display = 'block';
-    document.getElementById('videorio2016').style.display = 'block';
-    document.getElementById('datos').style.display = 'none';
-    document.getElementById('Resumen').style.display = 'none';
-
+function showstart() {
+    document.getElementById('welcome').style.display = 'block';
+    document.getElementById('videoRio2016').style.display = 'block';
+    document.getElementById('data').style.display = 'none';
+    document.getElementById('summary').style.display = 'none';
 }
 
 function showSports() {
-    document.getElementById('bienvenida').style.display = 'none';
-    document.getElementById('datos').style.display = 'block';
-    document.getElementById('Resumen').style.display = 'none';
-   
-    
+    document.getElementById('welcome').style.display = 'none';
+    document.getElementById('data').style.display = 'block';
+    document.getElementById('summary').style.display = 'none';
 }
 
 function showstadistics() {
-    document.getElementById('bienvenida').style.display = 'none';
-    document.getElementById('datos').style.display = 'none';
-    document.getElementById('Resumen').style.display = 'block';
-    document.getElementById('carrusel').style.display = 'block';
-    
+    document.getElementById('welcome').style.display = 'none';
+    document.getElementById('data').style.display = 'none';
+    document.getElementById('summary').style.display = 'block';
+    document.getElementById('carousel').style.display = 'block';
 }
 
 //export const init = () => {
 const athletes = gameData.athletes;
-
-/*const enterBtn=document.getElementById('inicio') 
-enterBtn.addEventListener('click',nombreFn)
-function nombreFn () {
-    document.getElementById('bienvenida').style.display='none';
-    document.getElementById('datos').style.display='block';  
-}*/
-
 const tableBody = document.querySelector('tbody')
+
+/* TABLAS */
 const allAthletes = (index)=>{
     return `
     <tr>
@@ -54,48 +44,47 @@ const allAthletes = (index)=>{
     </tr>
 `;
 }
-
-const printScreen = (mostrar) => {
+/* SHOW  */
+const printScreen = (show) => {
     tableBody.innerHTML = '';
-    mostrar.forEach ((z)=>{
+    show.forEach ((z)=>{
         tableBody.innerHTML += allAthletes(z);
     })
 }
 printScreen (athletes);
 
-const str=document.getElementById('disciplinas');
+/* ORDER BY DISCIPLINES */
+const str=document.getElementById('disciplines');
 str.addEventListener('change',(x)=>{
     const selectSport=filterSport(athletes,x.target.value);
     printScreen(selectSport)
 })
-
-const str2=document.getElementById('paises');
+/* ORDER BY COUNTRIES */
+const str2=document.getElementById('countries');
 str2.addEventListener('change',(x)=>{
     const selectPais=filterPais(athletes,x.target.value);
     printScreen(selectPais)
 })
-
+/* ORDER BY MEDALS */
 const str3=document.getElementById('medals');
 str3.addEventListener('change',(x)=>{
     const selectMedals=filterMedals(athletes,x.target.value);
     printScreen(selectMedals)
 })
-
-const str4=document.getElementById('Ordenador');
+/* ORDER ALPHABETICALLY */
+const str4=document.getElementById('order');
 str4.addEventListener('change',(x)=>{
     const selectName=sortData(athletes,x.target.value);
     printScreen(selectName)
 })
-
+/* FILTER FOR GENDER */
 const str5=document.getElementById('Gender');
 str5.addEventListener('change',(x)=>{
     const selectG=filterG(athletes,x.target.value);
     printScreen(selectG)
 })
 
-
-
-         /* COMPUTE STATES */
+/*  COMPUTE STATES  */
 const arrayFemale=filterG(athletes,"F");
 const arrayMale=filterG(athletes,"M");
 
@@ -112,36 +101,7 @@ const estadisticsTable=`
 `
 stadistic.innerHTML+=estadisticsTable;
 
-
-
-
-
-
-
-
-//Efectos boton
-var animateButton = function(e) {
-
-    e.preventDefault;
-    //reset animation
-    e.target.classList.remove('animate');
-    
-    e.target.classList.add('animate');
-    setTimeout(function(){
-      e.target.classList.remove('animate');
-    },700);
-  };
-  
-  var bubblyButtons = document.getElementsByClassName("inicio");
-    for (var i = 0; i < bubblyButtons.length; i++) {
-    bubblyButtons[i].addEventListener('click', animateButton, false);
-  }
-//}
-
-
-  export const sum = (num1, num2) => num1 + num2;
-
-  //carrusel
+/*  CAURRUSEL */
 var slideIndex = 0;
 showSlides();
 
@@ -156,18 +116,6 @@ function showSlides() {
     slides[slideIndex - 1].style.display = "block";
     setTimeout(showSlides, 2000);
 }
-/* var video = document.getElementById("myVideo");
-myFunction();
-var btn = document.getElementById("myBtn");
 
-function myFunction() {
-    if (video.paused) {
-        video.play();
-        btn.innerHTML = "Pause";
-    } else {
-        video.pause();
-        btn.innerHTML = "Play";
-    }
-} */
 
 
