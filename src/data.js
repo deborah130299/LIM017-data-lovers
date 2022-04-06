@@ -24,7 +24,6 @@ export const filterMedals =(athletes, str3) => {
     return resultByGender;
    //return athletes.filter(athletes => athletes.sport == str)
  }
-
  export const sortData = (data, sortOrder) => {
    const ordenado=
      data.sort ((a,b)=> {
@@ -44,7 +43,29 @@ export const filterMedals =(athletes, str3) => {
     return ordenado.reverse();
   }
 };
- /* export const computeStats = (data) => {
-   return 'OMG';
- };
-  */
+
+  
+
+
+
+
+ /* let contadores = {}
+for (let i=0 ; i<jugadores.length; i++){
+  if(!contadores.hasOwnProperty(jugadores[i].gender)) {
+    contadores[jugadores[i].gender] = 0;
+  }
+  contadores[jugadores[i].gender]++;
+}
+console.log(contadores);
+/* let contadores:
+  {M:3, F:1}; */
+/* let femenino=contadores.F
+let masculino=contadores.M
+console.log(contadores.M)
+console.log(contadores.F)
+const cantidad=jugadores.length
+console.log(cantidad)
+ function calcularPorcentaje (x,y){
+  return y/x * 100 +"%";
+}
+console.log(calcularPorcentaje(cantidad,masculino)); */ 

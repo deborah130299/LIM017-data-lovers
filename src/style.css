@@ -133,9 +133,20 @@ a {
 }
 
 #bienvenida{
+<<<<<<< HEAD
     display :block;
     height: 930px;
     background-image: url(data/img/im1.jpg);
+=======
+    display :none;
+<<<<<<< HEAD
+    height: 930px;
+   /* background-image: url(data/img/im1.jpg);*/
+=======
+    height: 100%;
+   /*  background-image: url(data/img/im1.jpg); */
+>>>>>>> upstream/main
+>>>>>>> parent of d3eaf54 (Merge branch 'main' of https://github.com/deborah130299/LIM017-data-lovers)
     background-size: cover;
     background-repeat:no-repeat;
     background-position: center;
@@ -145,6 +156,22 @@ a {
     align-items: center;
     
     }
+<<<<<<< HEAD
+=======
+
+<<<<<<< HEAD
+    #resumen{
+      display:none;
+    }
+=======
+    
+#resumen{
+  display:none;
+  align-content: center;
+}
+
+>>>>>>> upstream/main
+>>>>>>> parent of d3eaf54 (Merge branch 'main' of https://github.com/deborah130299/LIM017-data-lovers)
 #datos{
 display: none;
 height: 930px;
@@ -178,8 +205,27 @@ table{
 }
 
 th,td{
+<<<<<<< HEAD
     border: solid 1px black;
+<<<<<<< HEAD
     padding: 10px;
+=======
+    padding: 30px;
+=======
+    /* border: solid 1px rgb(48, 105, 228); */
+    padding: 10px;
+    text-align: center;
+>>>>>>> upstream/main
+}
+thead{
+    background-color:#0484C4  ;
+    border-bottom: solid 5px rgb(242, 160, 7);
+    color: white;
+}
+tr:nth-child(even){
+    background-color: #64c1ef;
+    
+>>>>>>> parent of d3eaf54 (Merge branch 'main' of https://github.com/deborah130299/LIM017-data-lovers)
 }
 
 thead{
@@ -231,6 +277,7 @@ h3{
 }
 
 #paises,#Gender,#medals,#disciplinas,#Ordenador{
+<<<<<<< HEAD
     width: 180px;
     height: 30px;
     font-family: 'Capriola', sans-serif;
@@ -272,3 +319,323 @@ h3{
 
 
  
+=======
+width: 19%;
+min-height: 4vh ;
+font-family: 'Capriola', sans-serif;
+font-size: 18px;
+text-transform: uppercase;
+letter-spacing: 1.5px;
+font-weight: 500;
+color: rgb(255, 255, 255);
+background-color: #F2620F;
+border: 1px solid;
+border-radius: 18px;
+box-shadow: 0px 5px 10px #dd9063a8;
+transition: all 0.3s ease 0s;
+cursor: pointer;
+font-family: Capriola, sans-serif;
+text-align: center;
+justify-content: center;
+}
+#inicio:hover {
+background-color: #4e4e4e;
+box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+color: #fff;
+transform: translateY(-7px);   
+}
+.footer{
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+text-align:center;
+color: #ffff;
+background-color: #0484C4;
+/* height: 5%;
+margin:-5px; */
+}
+
+
+<<<<<<< HEAD
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        color: #ffff;
+        background-color: rgb(17, 16, 16);
+        /* padding:20px 0; */
+        /* margin: -8px; */
+        
+    }
+/*carrusel*/
+#carrusel{
+    top: 50px;
+}
+#carrusel{
+    display: none;
+}
+  .container{
+=======
+/*carrusel*/
+#carrusel{
+width: 100%;
+display: none;
+}
+.container{
+
+/*  background-color: white; */
+width:100%;
+
+position:relative;
+height:100%;
+background: cover;
+
+}
+.slideshow-container{
+max-width: 1000px;
+position:relative;
+background-size: cover;
+background-position: center;
+
+}
+ul, li {
+padding: 0;
+margin: 0;
+list-style: none;
+}
+
+ul.slider li img{
+width: 100%;
+height: 500px;
+object-fit: cover;
+
+}
+.mySlider {
+position: relative;
+visibility: hidden;
+opacity: 0;
+}
+.mySlides{
+display:none;
+}     
+.prev, .next{
+cursor:pointer;
+position:absolute;
+top:200%;
+width:auto;
+padding:16px;
+color:white;
+font-weight:bold;
+font-size:18px;
+transition:0.6s ease;
+border-radius:0 3px 3px 0;
+}
+.next{
+right:0;
+border-radius:3px 0 0 3px;
+}
+.prev{
+left:0;
+border-radius:3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+background-color:rgba(0,0,0,0.8);
+}
+.fade{
+animation-duration:1.5s;
+}
+/*video*/
+#videorio2016{
+    display:block;
+    margin-left: -8px;
+    margin-right: -10px;
+}
+
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  margin-right: -10px;
+  margin-left: -10px;
+}
+
+.content {
+  display: block;
+  position: absolute;
+  /* bottom: 0; */
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  font-size: 18px;
+  margin: bottom 20px;
+  margin-top: 30px;
+  text-align: center;
+  margin-right: -8px;
+  margin-left: 0px;
+}
+
+p{
+  display: block;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+>>>>>>> upstream/main
+
+   background-color: white;
+    width: 1350px;
+        position:relative;
+       height:150px;
+      background: cover;
+      
+      }
+      .slideshow-container{
+       max-width: 1000px;
+       position:relative;
+              background-size: cover;
+              background-position: center;
+             
+      }
+      ul, li {
+          padding: 0;
+          margin: 0;
+          list-style: none;
+      }
+      
+      ul.slider li img{
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+      
+      }
+              .mySlider {
+                  position: relative;
+                  visibility: hidden;
+                  opacity: 0;
+              }
+      .mySlides{
+       display:none;
+      }		
+       .prev, .next{
+              cursor:pointer;
+              position:absolute;
+              top:200%;
+              width:auto;
+              padding:16px;
+              color:white;
+              font-weight:bold;
+              font-size:18px;
+              transition:0.6s ease;
+              border-radius:0 3px 3px 0;
+             }
+             .next{
+              right:0;
+              border-radius:3px 0 0 3px;
+             }
+            .prev{
+              left:0;
+              border-radius:3px 0 0 3px;
+             }
+    
+             .prev:hover, .next:hover{
+              background-color:rgba(0,0,0,0.8);
+             }
+     .fade{
+       animation-duration:1.5s;
+             }
+             /*video*/
+             #videorio2016{
+                 display:block;
+             }
+
+<<<<<<< HEAD
+             #myVideo {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                min-width: 100%; 
+                min-height: 100%;
+              }
+              
+              .content {
+                position: absolute;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.5);
+                color: #f1f1f1;
+                width: 100%;
+                padding: 20px;
+              }
+              
+              #myBtn {
+                width: 200px;
+                font-size: 18px;
+                padding: 10px;
+                border: none;
+                background: #000;
+                color: #fff;
+                cursor: pointer;
+              }
+              
+              #myBtn:hover {
+                background: #ddd;
+                color: black;
+              }
+ 
+
+              
+.content2{
+display:flex;
+justify-content:space-evenly;
+background-color:green;
+border-radius:5px;
+border:blue 1px solid;
+padding:10px;
+position: absolute;
+top: 100px;
+}
+.content2 > div{
+border:black 3px solid;
+padding:10px;
+border-radius:5px;
+background-color:white;
+margin: 5%;
+justify-content:space-between;
+justify-content:space-around;
+}
+=======
+
+#stadistic{
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: center;
+  align-content: center;
+  color: rgb(23, 42, 133);
+  margin-top: 5%;
+  overflow-x:auto;
+}
+#stadistic th,td,tr{
+  /* border: solid 1px rgb(48, 105, 228); */
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  padding: 2%;
+  text-align: center;
+}
+#stadistic thead{
+  background-color:#0484C4  ;
+  border-bottom: solid 5px rgb(242, 160, 7);
+  color: white;
+}
+
+#stadistic tr:nth-child(even){
+  background-color: rgb(242, 160, 7)
+  ;
+}
+>>>>>>> upstream/main
+>>>>>>> parent of d3eaf54 (Merge branch 'main' of https://github.com/deborah130299/LIM017-data-lovers)
