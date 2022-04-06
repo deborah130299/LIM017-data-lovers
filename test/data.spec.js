@@ -1,4 +1,4 @@
-
+import { computeStats } from '../src/data.js'
 import  {filterG, sortData} from '../src/data.js'
 import  {filterSport} from '../src/data.js'
 import  {filterPais} from '../src/data.js'
@@ -43,7 +43,6 @@ describe ('filterSport' , () => {
         },
         {
             sport: 'Handball'
-    
         }
     ]
   it('Rowing',() => {
@@ -52,7 +51,7 @@ describe ('filterSport' , () => {
     expect(result).toEqual([
         {
             sport: 'Rowing'
-        },
+        }
            ])
   }
   )
@@ -71,7 +70,7 @@ describe ('filterSport' , () => {
         },
         {
             team: 'Jordan'
-        },
+        }
     ]
   it('Australia',() => {
 
@@ -139,3 +138,33 @@ describe ('filterSport' , () => {
   )
   }
   )
+
+  describe('Filter medals by gender', () => {
+    it('returns filtered medals by gender', () => {
+      const data = [{
+        name:'Luisa',
+        gender: 'F',
+      },
+      {
+        name:'Juan',
+        gender: 'M',
+      },
+      {
+        name:'Paty',
+        gender: 'F',
+      },
+      {
+        name:'Ana',
+        gender: 'F',
+      },
+      {
+        name:'Mario',
+        gender: 'M',
+      }];
+     
+    const arrayFemale=filterG(data,'F'); 
+    const arrayMale=filterG(data,'M'); 
+    const newLocal = [60,40];
+      expect(computeStats(arrayFemale,arrayMale, data)).toEqual(newLocal);
+    });
+  });
