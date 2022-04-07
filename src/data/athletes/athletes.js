@@ -4,7 +4,7 @@ export default {
   "season": "summer",
   "city": "Rio de Janeiro",
   "athletes": [
-    /*  { 
+     { 
       "name": "Giovanni Abagnale",
       "gender": "M",
       "height": "198",
@@ -18052,7 +18052,7 @@ export default {
       "event": "Equestrianism Mixed Dressage, Team",
       "medal": "Gold"
     },
-    */
+    
     {
       "name": "Joanna Katie Rowsell Shand",
       "gender": "F",
