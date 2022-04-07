@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { filterSport, filterPais, filterMedals, sortData, filterG,  } from './data.js';
 =======
 <<<<<<< HEAD
@@ -7,15 +8,19 @@ import { filterSport, filterPais, filterMedals, sortData, filterG } from './data
 import  { filterSport, filterPais,filterMedals, sortData, filterG , computeStats }  from './data.js';
 >>>>>>> upstream/main
 >>>>>>> d3eaf542acfce46e57499375e195db57588eb35e
+=======
+import  { filterSport, filterPais,filterMedals, sortData, filterG , computeStats }  from './data.js';
+>>>>>>> upstream/main
 import gameData from './data/athletes/athletes.js';
-const btninicio = document.getElementById("menuinicio");
-const btnmedallas = document.getElementById("menumedallas");
-const btnresume = document.getElementById("menuresumen");
+const btnStart = document.getElementById("menuStart");
+const btnMedals = document.getElementById("medalsMenu");
+const btnresume = document.getElementById("menuSummary");
 // Eventos de la HomePage
-btninicio.addEventListener("click", showinicio);
-btnmedallas.addEventListener("click", showSports);
+btnStart.addEventListener("click", showStart);
+btnMedals.addEventListener("click", showSports);
 btnresume.addEventListener("click", showstadistics);
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 function showinicio() {
@@ -24,24 +29,29 @@ function showinicio() {
     document.getElementById('datos').style.display = 'none';
     document.getElementById('Resumen').style.display = 'none';
 
+=======
+function showStart() {
+    document.getElementById('welcome').style.display = 'block';
+    document.getElementById('videoRio2016').style.display = 'block';
+    document.getElementById('data').style.display = 'none';
+    document.getElementById('summary').style.display = 'none';
+>>>>>>> upstream/main
 }
 
 function showSports() {
-    document.getElementById('bienvenida').style.display = 'none';
-    document.getElementById('datos').style.display = 'block';
-    document.getElementById('Resumen').style.display = 'none';
-   
-    
+    document.getElementById('welcome').style.display = 'none';
+    document.getElementById('data').style.display = 'block';
+    document.getElementById('summary').style.display = 'none';
 }
 
 function showstadistics() {
-    document.getElementById('bienvenida').style.display = 'none';
-    document.getElementById('datos').style.display = 'none';
-    document.getElementById('Resumen').style.display = 'block';
-    document.getElementById('carrusel').style.display = 'block';
-    
+    document.getElementById('welcome').style.display = 'none';
+    document.getElementById('data').style.display = 'none';
+    document.getElementById('summary').style.display = 'block';
+    document.getElementById('carrusel').style.display = 'block'; 
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> d3eaf542acfce46e57499375e195db57588eb35e
 const btninicio = document.getElementById("menuinicio");
@@ -127,9 +137,14 @@ const athletes = gameData.athletes;
 
 
 
+=======
+//export const init = () => {
+const athletes = gameData.athletes;
+
+>>>>>>> upstream/main
 
 const tableBody = document.querySelector('tbody')
-const allAthletes = (index) => {
+const allAthletes = (index)=>{
     return `
     <tr>
     <td>${index.name}</td>
@@ -140,45 +155,47 @@ const allAthletes = (index) => {
     </tr>
 `;
 }
-
+//MOSTRAR EN PANTALLA
 const printScreen = (mostrar) => {
     tableBody.innerHTML = '';
-    mostrar.forEach((z) => {
+    mostrar.forEach ((z)=>{
         tableBody.innerHTML += allAthletes(z);
     })
 }
-printScreen(athletes);
+printScreen (athletes);
 
-const str = document.getElementById('disciplinas');
-str.addEventListener('change', (x) => {
-    const selectSport = filterSport(athletes, x.target.value);
+/* ORDER BY DISCIPLINES */
+const str=document.getElementById('disciplines');
+str.addEventListener('change',(x)=>{
+    const selectSport=filterSport(athletes,x.target.value);
     printScreen(selectSport)
 })
-
-const str2 = document.getElementById('paises');
-str2.addEventListener('change', (x) => {
-    const selectPais = filterPais(athletes, x.target.value);
+/* ORDER BY COUNTRIES */
+const str2=document.getElementById('countries');
+str2.addEventListener('change',(x)=>{
+    const selectPais=filterPais(athletes,x.target.value);
     printScreen(selectPais)
 })
-
-const str3 = document.getElementById('medals');
-str3.addEventListener('change', (x) => {
-    const selectMedals = filterMedals(athletes, x.target.value);
+/* ORDER BY MEDALS */
+const str3=document.getElementById('medals');
+str3.addEventListener('change',(x)=>{
+    const selectMedals=filterMedals(athletes,x.target.value);
     printScreen(selectMedals)
 })
-
-const str4 = document.getElementById('Ordenador');
-str4.addEventListener('change', (x) => {
-    const selectName = sortData(athletes, x.target.value);
+  /* ORDER ALPHABETICALLY */
+const str4=document.getElementById('order');
+str4.addEventListener('change',(x)=>{
+    const selectName=sortData(athletes,x.target.value);
     printScreen(selectName)
 })
-
-const str5 = document.getElementById('Gender');
-str5.addEventListener('change', (x) => {
-    const selectG = filterG(athletes, x.target.value);
+/* FILTER FOR GENDER */ 
+const str5=document.getElementById('gender');
+str5.addEventListener('change',(x)=>{
+    const selectG=filterG(athletes,x.target.value);
     printScreen(selectG)
 })
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -194,6 +211,9 @@ str6.addEventListener('change', (x) => {
 
 
          /* COMPUTE STATES */
+=======
+/*STATISTICS TABLE */ 
+>>>>>>> upstream/main
 const arrayFemale=filterG(athletes,"F");
 const arrayMale=filterG(athletes,"M");
 
@@ -203,13 +223,14 @@ console.log(arrayPercentByGender);
 let stadistic =document.getElementById("stadistic");
 const estadisticsTable=`
 <table>
-<thead><tr><th> GENERO</th> <th>PORCENTAJE </th></tr></thead>
+<tr><th> GENERO</th> <th>PORCENTAJE </th></tr>
 <tr><td>Femenino</td><td> ${arrayPercentByGender[0]+"%"}</td>
 <tr><td>Masculino</td><td> ${arrayPercentByGender[1]+"%"}</td>
 </table>
 `
 stadistic.innerHTML+=estadisticsTable;
 
+<<<<<<< HEAD
 
 
 
@@ -255,6 +276,9 @@ export const sum = (num1, num2) => num1 + num2;
   //carrusel
 >>>>>>> upstream/main
 >>>>>>> d3eaf542acfce46e57499375e195db57588eb35e
+=======
+  //carrusel
+>>>>>>> upstream/main
 var slideIndex = 0;
 showSlides();
 
@@ -269,6 +293,7 @@ function showSlides() {
     slides[slideIndex - 1].style.display = "block";
     setTimeout(showSlides, 2000);
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 var video = document.getElementById("myVideo");
 =======
@@ -319,4 +344,6 @@ function showDom(element,arr){
 >>>>>>> upstream/main
 
 >>>>>>> d3eaf542acfce46e57499375e195db57588eb35e
+=======
+>>>>>>> upstream/main
 

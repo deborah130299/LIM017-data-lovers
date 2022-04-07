@@ -1,8 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 body {
   /* margin: -10px; */
   font-family: Helvetica, sans-serif;
@@ -146,6 +141,7 @@ top: 0;
   display: none;
 }
 }
+<<<<<<< HEAD
 
 #bienvenida{
 <<<<<<< HEAD
@@ -154,13 +150,13 @@ top: 0;
     height: 930px;
     background-image: url(data/img/im1.jpg);
 =======
-    display :none;
-<<<<<<< HEAD
-    height: 930px;
-   /* background-image: url(data/img/im1.jpg);*/
 =======
+#welcome{
+>>>>>>> upstream/main
+    display :none;
     height: 100%;
    /*  background-image: url(data/img/im1.jpg); */
+<<<<<<< HEAD
 >>>>>>> upstream/main
 <<<<<<< HEAD
 >>>>>>> parent of d3eaf54 (Merge branch 'main' of https://github.com/deborah130299/LIM017-data-lovers)
@@ -171,6 +167,8 @@ top: 0;
     height: 930px;
    /* background-image: url(data/img/im1.jpg);*/
 >>>>>>> d3eaf542acfce46e57499375e195db57588eb35e
+=======
+>>>>>>> upstream/main
     background-size: cover;
     background-repeat:no-repeat;
     background-position: center;
@@ -180,6 +178,7 @@ top: 0;
     /* align-items: center; */
     align-items:stretch;
     
+<<<<<<< HEAD
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -192,10 +191,14 @@ top: 0;
 =======
     
 #resumen{
+=======
+    }    
+#summary{
+>>>>>>> upstream/main
   display:none;
-  align-content: center;
 }
 
+<<<<<<< HEAD
 >>>>>>> upstream/main
 <<<<<<< HEAD
 >>>>>>> parent of d3eaf54 (Merge branch 'main' of https://github.com/deborah130299/LIM017-data-lovers)
@@ -208,6 +211,9 @@ top: 0;
     }
 >>>>>>> d3eaf542acfce46e57499375e195db57588eb35e
 #datos{
+=======
+#data{
+>>>>>>> upstream/main
 display: none;
 height: 930px;
 background-image: url(data/img/fondo-rio.png);
@@ -218,10 +224,10 @@ background-size: cover;
 margin:-8px; 
 padding:20px;
 font-family: 'Capriola', sans-serif;
-font-size: 20px;
+font-size: 16px;
 }
 
-#contenedorGeneral{
+#generalContainer{
     margin: 150px auto;
     width: 90%;
      /* display: flex; */
@@ -235,18 +241,9 @@ table{
     border-collapse: collapse;
     width:100%;
    /*  margin-bottom: 30px; */
-   align-content: center;
-   text-align: center;
-   /* height: 5%; */
 }
-
-/* #t2{
-  align-content: center;
-  text-align: center;
-  padding: 10px;
-  text-align: left;
-} */
 th,td{
+<<<<<<< HEAD
 <<<<<<< HEAD
     border: solid 1px black;
 <<<<<<< HEAD
@@ -255,10 +252,11 @@ th,td{
 =======
     padding: 30px;
 =======
+=======
+>>>>>>> upstream/main
     /* border: solid 1px rgb(48, 105, 228); */
     padding: 10px;
-    text-align: center;
->>>>>>> upstream/main
+    text-align: left;
 }
 thead{
     background-color:#0484C4  ;
@@ -266,6 +264,7 @@ thead{
     color: white;
 }
 tr:nth-child(even){
+<<<<<<< HEAD
     background-color: #64c1ef;
     
 >>>>>>> parent of d3eaf54 (Merge branch 'main' of https://github.com/deborah130299/LIM017-data-lovers)
@@ -285,6 +284,10 @@ tr:nth-child(even){
 
 tr:hover {
   background: #383134;
+=======
+    background-color: #4ad4f3
+    ;
+>>>>>>> upstream/main
 }
 
 .container-fondo{
@@ -292,7 +295,7 @@ tr:hover {
     background-size: 400px;
 }
 
-#inicio {
+#start {
 width: 200px;
 height: 80px;
 font-family: 'Capriola', sans-serif;
@@ -312,7 +315,6 @@ padding-left: -30px;
 margin: 100px;
 
 }
-
 h3{
 align-content: center;
 display:flex;
@@ -324,6 +326,7 @@ margin-bottom: 0px;
 border-bottom: solid 1px #ffffff;
 }
 
+<<<<<<< HEAD
 #paises,#Gender,#medals,#disciplinas,#Ordenador{
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -500,6 +503,9 @@ margin:-5px; */
 <<<<<<< HEAD
  
 =======
+=======
+#countries,#Gender,#medals,#disciplines,#order{
+>>>>>>> upstream/main
 width: 19%;
 min-height: 4vh ;
 font-family: 'Capriola', sans-serif;
@@ -518,7 +524,7 @@ font-family: Capriola, sans-serif;
 text-align: center;
 justify-content: center;
 }
-#inicio:hover {
+#start:hover {
 background-color: #4e4e4e;
 box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
 color: #fff;
@@ -529,35 +535,12 @@ position: fixed;
 left: 0;
 bottom: 0;
 width: 100%;
-text-align:center;
+text-align: center;
 color: #ffff;
-background-color: #0484C4;
-/* height: 5%;
-margin:-5px; */
+background-color: rgb(17, 16, 16);
 }
 
 
-<<<<<<< HEAD
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        text-align: center;
-        color: #ffff;
-        background-color: rgb(17, 16, 16);
-        /* padding:20px 0; */
-        /* margin: -8px; */
-        
-    }
-/*carrusel*/
-#carrusel{
-    top: 50px;
-}
-#carrusel{
-    display: none;
-}
-  .container{
-=======
 /*carrusel*/
 #carrusel{
 width: 100%;
@@ -628,7 +611,7 @@ background-color:rgba(0,0,0,0.8);
 animation-duration:1.5s;
 }
 /*video*/
-#videorio2016{
+#videoRio2016{
     display:block;
     margin-left: -8px;
     margin-right: -10px;
@@ -645,19 +628,19 @@ animation-duration:1.5s;
 }
 
 .content {
-  display: block;
-  position: absolute;
-  /* bottom: 0; */
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 100%;
-  padding: 20px;
-  font-size: 18px;
-  margin: bottom 20px;
-  margin-top: 30px;
-  text-align: center;
-  margin-right: -8px;
-  margin-left: 0px;
+display: block;
+position: absolute;
+/* bottom: 0; */
+background: rgba(0, 0, 0, 0.5);
+color: #f1f1f1;
+width: 100%;
+padding: 20px;
+font-size: 18px;
+margin: bottom 20px;
+margin-top: 30px;
+text-align: center;
+margin-right: -8px;
+margin-left: 0px;
 }
 
 p{
@@ -668,6 +651,7 @@ p{
   margin-left: 10px;
   margin-right: 10px;
 }
+<<<<<<< HEAD
 >>>>>>> upstream/main
 
    background-color: white;
@@ -794,16 +778,20 @@ justify-content:space-around;
 }
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> upstream/main
 
 #stadistic{
   margin-left: 30%;
   margin-right: 30%;
-  text-align: center;
-  align-content: center;
-  color: rgb(23, 42, 133);
-  margin-top: 5%;
-  overflow-x:auto;
+ /*  display: flex;
+  align-content: center; */
+  /* padding-left: 20%;
+  padding-right: 20%; */
+  font-size: 20px;
+ color: #04629d ;
 }
+<<<<<<< HEAD
 #stadistic th,td,tr{
   /* border: solid 1px rgb(48, 105, 228); */
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
@@ -827,3 +815,15 @@ justify-content:space-around;
 >>>>>>> parent of d3eaf54 (Merge branch 'main' of https://github.com/deborah130299/LIM017-data-lovers)
 =======
 >>>>>>> d3eaf542acfce46e57499375e195db57588eb35e
+=======
+h4{
+  color:#ffffff;
+  font-size: larger;
+  background-color:#04629d;
+  margin-left: 30%;
+  margin-right: 30%;
+  height: 60px;
+  padding-top: 20px;
+  
+}
+>>>>>>> upstream/main
