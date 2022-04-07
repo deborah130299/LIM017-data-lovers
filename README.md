@@ -1,5 +1,5 @@
 # Data Lovers
-
+<!-- 
 ## Índice
 
 * [1. Preámbulo](#1-preámbulo)
@@ -616,3 +616,62 @@ Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
 * [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
 * [ ] UI: Permite filtrar data en base a una condición.
 * [ ] UI: Es _responsive_.
+ -->
+
+ ## DATA OLIMPICS
+
+ ### 1.	Presentación del proyecto
+La web creada presenta información de los diferentes Atletas que participaron en los Juegos Olímpicos Río 2016, la interfaz permite al usuario visualizar e interactuar con los datos de su interés mediante las funciones de Filtrado (filtrado por países, disciplinas, medallas y género) y Orden alfabético (A-Z y Z-A) ; se presenta también la sección de data estadística puntual relevante del evento.
+(Foto)
+### 2.	Historias de usuario
+Historia 1 
+Problematica:
+“Como estudiante me gustaria filtrar por paises, que deportes participan en las Olimpiadas Rio 2016 y conocer la participacion de Peru en estos juegos.”
+Solucion empleada :
+Filtro donde aparecerá una división por paises y desde ahí saldrá la información de los atletas que ganaron medallas.
+Historia 2:
+Problematica:
+“Como deportista me agradaria conocer quienes obtuvieron medalla de oro”
+Solucion empleada :
+Para esta historia se implemento un filtro en el cual el usuario pueda visualizar los deportistas que obtuvieron medalla de oro, plata o bronce de acuerdo este lo requiera .
+
+Historia 3:
+Problematica:
+“Como profesora de educacion fisica me encantaria enseñar en mi clase la participacion femenina en estas olimpiadas ”
+Solucion empleada :
+Se implemento un filtro en el cual se pueda visualizar por genero ya sea solo femenino o solo masculino segun lo requiera el usuario.
+Historia 4:
+Problematica:
+“Como estudiante me gustaria visualizar los datos de manera alfabetica con mayor facilidad y asi tener un orden”
+Solucion empleada :
+Se agrego un filtro en el cual el usuario pueda elegir si ordenar desde la A-Z o viceversa Z-A.
+
+### 3. Prototipo
+* Prototipo de baja fidelidad
+El primer prototipo que realizamos de baja fidelidad, fue hecho en papel y lapicero, y quedó de la siguiente manera:
+#### 3.1 Prototipo de alta fidelidad
+En el diseño del prototipo de alta fidelidad  pensamos en un diseño sencillo, colorido, ordenado e intuitivo tomando en cuenta las historias de usuario. El usuario podra visualizar una primera pantalla introductoria en la cual vera un boton que lo conducira a la visualizacion de los atletas junto con sus filtros de: genero, medallas, pais y orden alfabetico. Cada atleta cuenta con una tarjeta que contiene toda su información deportiva en los juegos olimpicos, además de una imagen avatar según el género del atleta.
+#### 3.2 Vista Final
+Tomando en cuenta el diseño del prototipo de alta fidelidad se realizaron unos ajustes en el proceso tomando en cuenta los feedbacks de los coaches y compañeras, resultando asi una pagina dinamica y mas recursos visuales para el usuario.
+### 4.	Pruebas unitarias (Test)
+Se realizaron los test de cada una de las funciones implementadas (filtrado, orden y calculo estadístico).
+Al ejecutar nuestras pruebas unitarias nos dá una cobertura del 75% el cual se detalla en el modal.
+(Foto)
+
+### 5.	Feedback
+El equipo tomando como referencia webs de eventos deportivos elaboro un prototipo inicial, el cual fue tomando forma con cada recomendación dada por nuestras compañeras y coaches, tales como:
+
+o	Interfaz (fondos y secciones)
+*	Usar paleta de colores que guarde relación con cada vista de la web.
+*	Cambiar el nombre, tamaño y diseño del botón que figuraba (primera vista).
+*	Aplicar color a botones de filtro y orden (segunda vista). 
+*	Aplicar color de fondo (segunda vista).
+
+o	Tabla (Filtro y Orden)
+*	Cambiar el diseño y ubicación de los botones de filtro.
+*	Centrar e incrementar el ancho la tabla.
+*	Aplicar diseño visual armónico.
+
+o	Tabla (Estadística)
+*	Centrar y adecuar el ancho de la tabla.
+*	Cambiar el diseño.
