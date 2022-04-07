@@ -4,7 +4,7 @@ export default {
   "season": "summer",
   "city": "Rio de Janeiro",
   "athletes": [
-     {
+    /*  { 
       "name": "Giovanni Abagnale",
       "gender": "M",
       "height": "198",
@@ -9460,7 +9460,7 @@ export default {
       "event": "Sailing Men's Skiff",
       "medal": "Silver"
     },
-    /*{
+    {
       "name": "Jeong Bo-Kyeong",
       "gender": "F",
       "height": "153",
@@ -18052,6 +18052,7 @@ export default {
       "event": "Equestrianism Mixed Dressage, Team",
       "medal": "Gold"
     },
+    */
     {
       "name": "Joanna Katie Rowsell Shand",
       "gender": "F",
@@ -24279,6 +24280,6 @@ export default {
       "age": 29,
       "event": "Hockey Men's Hockey",
       "medal": "Bronze"
-    } */
+    } 
   ]
 }

@@ -13,27 +13,25 @@ background-size: cover;
 background-repeat: no-repeat;
 background-attachment: fixed;
 text-align: center;
+
+
 }
 a {
   color: #ffffff;
 }
 .logo{
-max-height: 50px;
-display:flex;
-justify-content:center;
-align-content:center;  
-text-align: center; 
- font-size: 30px;
-}
-
+  max-height: 38px;
+    display:flex;
+    justify-content:center;
+    align-content:center;    
+  }
 .header {
-background-color: #ffffff;
-box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-position: fixed;
-width: 100%;
-z-index: 3;
-margin-left: 10px;
-/* margin-top: -10px; */
+    background-color: #ffffff;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    margin-left: 10px;
 }
 .header ul {
 margin: 0;
@@ -41,7 +39,6 @@ padding: 0;
 list-style: none;
 overflow: hidden;
 background-color: #fff;
-
 }
 .header li a {
  /*  display: flex;
@@ -58,14 +55,10 @@ background-color: #15b300;
 .header .logo {
 display: block;
 float: left;
-font-size: 40px;
-padding: 10px 5px;
+font-size: 2em;
+padding: 10px 20px;
 text-decoration: none;
-color: #db6a00;
-margin-top: 20px;
-margin-left: 5px;
-margin-right: 5px;
-
+color: #ff6714;
 }
 /* menu */
 .header .menu {
@@ -73,7 +66,6 @@ clear: both;
 max-height: 0;
 transition: max-height .2s ease-out;
 background-color: #db6a00;
-font-size: 22px;
 
 }
 /* menu icon */
@@ -88,11 +80,10 @@ user-select: none;
 .header .menu-icon .navicon {
 background: #ffffff;
 display: block;
-height: 90%;
+height: 10px;
 position: relative;
 transition: background .2s ease-out;
-width: 120%;
-
+width: 30px;
 }
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
@@ -103,10 +94,9 @@ height: 100%;
 position: absolute;
 transition: all .2s ease-out;
 width: 100%;
-
 }
 .header .menu-icon .navicon:before {
-top: 30px;
+top: 20px;
 }
 .header .menu-icon .navicon:after {
 top: -5px;
@@ -128,31 +118,31 @@ transform: rotate(-45deg);
 .header .menu-btn:checked ~ .menu-icon .navicon:after {
 transform: rotate(45deg);
 }
+
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 top: 0;
 }
+
 /* 48em = 768px */
 @media (min-width: 48em) {
 .header li {
   float: left;
 }
 .header li a {
-  padding: 30px 50px;
-  font-size: 110%;
+  padding: 20px 30px;
 }
 .header .menu {
   clear: none;
   float: right;
   max-height: none;
-  
 }
 .header .menu-icon {
   display: none;
- 
 }
 }
-#welcome{
+
+#bienvenida{
     display :none;
     height: 100%;
    /*  background-image: url(data/img/im1.jpg); */
@@ -165,12 +155,14 @@ top: 0;
     /* align-items: center; */
     align-items:stretch;
     
-    }  
-#summary{
+    }
+
+    
+#resumen{
   display:none;
-  align-content: center;
 }
-#data{
+
+#datos{
 display: none;
 height: 930px;
 background-image: url(data/img/fondo-rio.png);
@@ -181,30 +173,28 @@ background-size: cover;
 margin:-8px; 
 padding:20px;
 font-family: 'Capriola', sans-serif;
-font-size: 20px;
+font-size: 16px;
 }
-#generalContainer{
+
+#contenedorGeneral{
     margin: 150px auto;
     width: 90%;
      /* display: flex; */
     text-align: center;
     justify-content: space-between;
 }
+
 table{
     background-color: #ffffff;
     /* text-align: left; */
     border-collapse: collapse;
     width:100%;
    /*  margin-bottom: 30px; */
-   align-content: center;
-   text-align: center;
-   /* height: 5%; */
 }
-
 th,td{
     /* border: solid 1px rgb(48, 105, 228); */
     padding: 10px;
-    text-align: center;
+    text-align: left;
 }
 thead{
     background-color:#0484C4  ;
@@ -212,13 +202,16 @@ thead{
     color: white;
 }
 tr:nth-child(even){
-    background-color: #64c1ef;
+    background-color: #91E0F2
+    ;
 }
+
 .container-fondo{
     flex-direction: row-reverse;
     background-size: 400px;
 }
-#start {
+
+#inicio {
 width: 200px;
 height: 80px;
 font-family: 'Capriola', sans-serif;
@@ -249,7 +242,7 @@ margin-bottom: 0px;
 border-bottom: solid 1px #ffffff;
 }
 
-#countries,#Gender,#medals,#disciplines,#order{
+#paises,#Gender,#medals,#disciplinas,#Ordenador{
 width: 19%;
 min-height: 4vh ;
 font-family: 'Capriola', sans-serif;
@@ -268,7 +261,7 @@ font-family: Capriola, sans-serif;
 text-align: center;
 justify-content: center;
 }
-#start:hover {
+#inicio:hover {
 background-color: #4e4e4e;
 box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
 color: #fff;
@@ -279,16 +272,14 @@ position: fixed;
 left: 0;
 bottom: 0;
 width: 100%;
-text-align:center;
+text-align: center;
 color: #ffff;
-background-color: #0484C4;
-/* height: 5%;
-margin:-5px; */
+background-color: rgb(17, 16, 16);
 }
 
 
 /*carrusel*/
-#carousel{
+#carrusel{
 width: 100%;
 display: none;
 }
@@ -357,11 +348,10 @@ background-color:rgba(0,0,0,0.8);
 animation-duration:1.5s;
 }
 /*video*/
-#videoRio2016{
+#videorio2016{
     display:block;
-    margin-left: -40px;
-    margin-right: -9px;
-    padding: 30px;
+    margin-left: -8px;
+    margin-right: -10px;
 }
 
 #myVideo {
@@ -382,12 +372,12 @@ animation-duration:1.5s;
   color: #f1f1f1;
   width: 100%;
   padding: 20px;
-  font-size: 18px;
-  margin: bottom 20px;
-  margin-top: 30px;
-  text-align: center;
-  margin-right: -8px;
-  margin-left: 0px;
+font-size: 18px;
+margin: bottom 20px;
+margin-top: 30px;
+text-align: center;
+margin-right: -8px;
+margin-left: 0px;
 }
 
 p{
@@ -399,28 +389,7 @@ p{
   margin-right: 10px;
 }
 
-#stadistic{
-  margin-left: 30%;
-  margin-right: 30%;
-  text-align: center;
-  align-content: center;
-  color: rgb(23, 42, 133);
-  margin-top: 5%;
-  overflow-x:auto;
-}
-#stadistic th,td,tr{
-  /* border: solid 1px rgb(48, 105, 228); */
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-  padding: 2%;
-  text-align: center;
-}
-#stadistic thead{
-  background-color:#0484C4  ;
-  border-bottom: solid 5px rgb(242, 160, 7);
-  color: white;
-}
 
-#stadistic tr:nth-child(even){
-  background-color: rgb(242, 160, 7)
-  ;
-}
+
+
+

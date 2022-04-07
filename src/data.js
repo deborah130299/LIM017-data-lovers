@@ -1,27 +1,30 @@
-/* ORDER BY DISCIPLINES */
+//import athletes from "./data/athletes/athletes";
+
+// estas funciones son de ejemplo
 export const filterSport =(athletes, str) => {
   const resultBySport=athletes.filter(x=>x.sport===str)
     return resultBySport;
+   //return athletes.filter(athletes => athletes.sport == str)
  }
- /* ORDER BY COUNTRIES */
-  export const filterPais =(athletes, str2) => {
+ 
+ export const filterPais =(athletes, str2) => {
   const resultByTeam=athletes.filter(x=>x.team===str2)
     return resultByTeam;
+   //return athletes.filter(athletes => athletes.sport == str)
  }
-
-/* ORDER BY MEDALS */
+  
 export const filterMedals =(athletes, str3) => {
   const resultByMedals=athletes.filter(x=>x.medal===str3)
     return resultByMedals;
+   //return athletes.filter(athletes => athletes.sport == str)
  }
 
-/* FILTER FOR GENDER */
  export const filterG =(athletes, str5) => {
   const resultByGender=athletes.filter(x=>x.gender===str5)
     return resultByGender;
+   //return athletes.filter(athletes => athletes.sport == str)
  }
 
- /* ORDER ALPHABETICALLY */
  export const sortData = (data, sortOrder) => {
    const ordenado=
      data.sort ((a,b)=> {
@@ -42,13 +45,14 @@ export const filterMedals =(athletes, str3) => {
   }
 };
 
-/* COMPUTE STATES */
+
 export const computeStats =(arrayFemale,arrayMale,arrayTotal)=>{
 const countFemale=arrayFemale.length;
 const countMale=arrayMale.length;
 const countTotal=arrayTotal.length;
 const percentFemale=Math.round((countFemale/countTotal)*100);
 const percentMale=Math.round((countMale/countTotal)*100);
+
 let array =[percentFemale, percentMale];
 return array;
 }
@@ -57,3 +61,32 @@ return array;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* // Funcion de filtrar medalla por genero
+export const medalsByGender = (data, conditionGender, conditionMedal) => { 
+  let medalsG = data.filter((athletes) => athletes.gender.includes(conditionGender));
+  let genderM = medalsG.filter((medals) => medals.medal.includes(conditionMedal)).length;
+  return genderM;
+}; */
+
+
+
+/*  export const computeStats = (data,medalsF) => {
+   const contadorF=(data.filter(y=>y.gender===medalsF))
+   const count=contadorF.length;
+   const percent=Math.round((count/data.length)*100)
+   return 'percent';
+ };
+  */
