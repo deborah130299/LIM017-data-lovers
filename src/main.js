@@ -1,16 +1,6 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-import { filterSport, filterPais, filterMedals, sortData, filterG,  } from './data.js';
-=======
-<<<<<<< HEAD
-import { filterSport, filterPais, filterMedals, sortData, filterG } from './data.js';
-=======
+
 import  { filterSport, filterPais,filterMedals, sortData, filterG , computeStats }  from './data.js';
->>>>>>> upstream/main
->>>>>>> d3eaf542acfce46e57499375e195db57588eb35e
-=======
-import  { filterSport, filterPais,filterMedals, sortData, filterG , computeStats }  from './data.js';
->>>>>>> upstream/main
+
 import gameData from './data/athletes/athletes.js';
 const btnStart = document.getElementById("menuStart");
 const btnMedals = document.getElementById("medalsMenu");
@@ -20,9 +10,7 @@ btnStart.addEventListener("click", showStart);
 btnMedals.addEventListener("click", showSports);
 btnresume.addEventListener("click", showstadistics);
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+
 function showinicio() {
     document.getElementById('bienvenida').style.display = 'block';
     document.getElementById('videorio2016').style.display = 'block';

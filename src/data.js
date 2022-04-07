@@ -43,21 +43,18 @@ export const filterMedals =(athletes, str3) => {
     return ordenado.reverse();
   }
 };
-<<<<<<< HEAD
-<<<<<<< HEAD
 
   
 
 
 
 
-=======
-<<<<<<< HEAD
+
  /* export const computeStats = (data) => {
    return 'OMG';
  };
   */
->>>>>>> d3eaf542acfce46e57499375e195db57588eb35e
+
  /* let contadores = {}
 for (let i=0 ; i<jugadores.length; i++){
   if(!contadores.hasOwnProperty(jugadores[i].gender)) {
@@ -77,13 +74,8 @@ console.log(cantidad)
  function calcularPorcentaje (x,y){
   return y/x * 100 +"%";
 }
-<<<<<<< HEAD
 console.log(calcularPorcentaje(cantidad,masculino)); */ 
-=======
-console.log(calcularPorcentaje(cantidad,masculino)); */ 
-=======
-=======
->>>>>>> upstream/main
+
 
 
 export const computeStats =(arrayFemale,arrayMale,arrayTotal)=>{
@@ -101,10 +93,6 @@ return array;
 
 
 
-<<<<<<< HEAD
->>>>>>> upstream/main
->>>>>>> d3eaf542acfce46e57499375e195db57588eb35e
-=======
 
 
 
@@ -134,4 +122,4 @@ export const medalsByGender = (data, conditionGender, conditionMedal) => {
    return 'percent';
  };
   */
->>>>>>> upstream/main
+
