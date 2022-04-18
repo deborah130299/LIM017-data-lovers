@@ -44,4 +44,49 @@ export const filterMedals =(athletes, str3) => {
     return ordenado.reverse();
   }
 };
- 
+
+
+export const computeStats =(arrayFemale,arrayMale,arrayTotal)=>{
+const countFemale=arrayFemale.length;
+const countMale=arrayMale.length;
+const countTotal=arrayTotal.length;
+const percentFemale=Math.round((countFemale/countTotal)*100);
+const percentMale=Math.round((countMale/countTotal)*100);
+
+let array =[percentFemale, percentMale];
+return array;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* // Funcion de filtrar medalla por genero
+export const medalsByGender = (data, conditionGender, conditionMedal) => { 
+  let medalsG = data.filter((athletes) => athletes.gender.includes(conditionGender));
+  let genderM = medalsG.filter((medals) => medals.medal.includes(conditionMedal)).length;
+  return genderM;
+}; */
+
+
+
+/*  export const computeStats = (data,medalsF) => {
+   const contadorF=(data.filter(y=>y.gender===medalsF))
+   const count=contadorF.length;
+   const percent=Math.round((count/data.length)*100)
+   return 'percent';
+ };
+  */

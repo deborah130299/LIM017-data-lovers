@@ -1,74 +1,39 @@
-import { filterSport, filterPais, filterMedals, sortData, filterG } from './data.js';
+import  { filterSport, filterPais,filterMedals, sortData, filterG , computeStats }  from './data.js';
 import gameData from './data/athletes/athletes.js';
-const btninicio = document.getElementById("menuinicio");
-const btnmedallas = document.getElementById("menumedallas");
-const btnresume = document.getElementById("menuresumen");
+const btnStart = document.getElementById("menuStart");
+const btnMedals = document.getElementById("medalsMenu");
+const btnresume = document.getElementById("menuSummary");
 // Eventos de la HomePage
-btninicio.addEventListener("click", showinicio);
-btnmedallas.addEventListener("click", showSports);
+btnStart.addEventListener("click", showStart);
+btnMedals.addEventListener("click", showSports);
 btnresume.addEventListener("click", showstadistics);
 
-function showinicio() {
-    document.getElementById('bienvenida').style.display = 'block';
-    document.getElementById('videorio2016').style.display = 'block';
-    document.getElementById('datos').style.display = 'none';
-    document.getElementById('Resumen').style.display = 'none';
-
+function showStart() {
+    document.getElementById('welcome').style.display = 'block';
+    document.getElementById('videoRio2016').style.display = 'block';
+    document.getElementById('data').style.display = 'none';
+    document.getElementById('summary').style.display = 'none';
 }
 
 function showSports() {
-    document.getElementById('bienvenida').style.display = 'none';
-    document.getElementById('datos').style.display = 'block';
-    document.getElementById('Resumen').style.display = 'none';
-   
-    
+    document.getElementById('welcome').style.display = 'none';
+    document.getElementById('data').style.display = 'block';
+    document.getElementById('summary').style.display = 'none';
 }
 
 function showstadistics() {
-    document.getElementById('bienvenida').style.display = 'none';
-    document.getElementById('datos').style.display = 'none';
-    document.getElementById('Resumen').style.display = 'block';
-    document.getElementById('carrusel').style.display = 'block';
-    
+    document.getElementById('welcome').style.display = 'none';
+    document.getElementById('data').style.display = 'none';
+    document.getElementById('summary').style.display = 'block';
+    document.getElementById('carrusel').style.display = 'block'; 
 }
 
-const btninicio = document.getElementById("menuinicio");
-const btnmedallas = document.getElementById("menumedallas");
-const btnresume = document.getElementById("menuresumen");
-// Eventos de la HomePage
-btninicio.addEventListener("click", showinicio);
-btnmedallas.addEventListener("click", showSports);
-btnresume.addEventListener("click", showstadistics);
-
-function showinicio() {
-    document.getElementById('bienvenida').style.display = 'block';
-    document.getElementById('videorio2016').style.display = 'block';
-    document.getElementById('datos').style.display = 'none';
-    document.getElementById('Resumen').style.display = 'none';
-
-}
-
-function showSports() {
-    document.getElementById('bienvenida').style.display = 'none';
-    document.getElementById('datos').style.display = 'block';
-    document.getElementById('Resumen').style.display = 'none';
-   
-    
-}
-
-function showstadistics() {
-    document.getElementById('bienvenida').style.display = 'none';
-    document.getElementById('datos').style.display = 'none';
-    document.getElementById('Resumen').style.display = 'block';
-    document.getElementById('carrusel').style.display = 'block';
-    
-}
 //export const init = () => {
-
 const athletes = gameData.athletes;
 
+
 const tableBody = document.querySelector('tbody')
-const allAthletes = (index) => {
+const allAthletes = (index)=>{
     return `
     <tr>
     <td>${index.name}</td>
@@ -79,70 +44,64 @@ const allAthletes = (index) => {
     </tr>
 `;
 }
-
+//MOSTRAR EN PANTALLA
 const printScreen = (mostrar) => {
     tableBody.innerHTML = '';
-    mostrar.forEach((z) => {
+    mostrar.forEach ((z)=>{
         tableBody.innerHTML += allAthletes(z);
     })
 }
-printScreen(athletes);
+printScreen (athletes);
 
-const str = document.getElementById('disciplinas');
-str.addEventListener('change', (x) => {
-    const selectSport = filterSport(athletes, x.target.value);
+/* ORDER BY DISCIPLINES */
+const str=document.getElementById('disciplines');
+str.addEventListener('change',(x)=>{
+    const selectSport=filterSport(athletes,x.target.value);
     printScreen(selectSport)
 })
-
-const str2 = document.getElementById('paises');
-str2.addEventListener('change', (x) => {
-    const selectPais = filterPais(athletes, x.target.value);
+/* ORDER BY COUNTRIES */
+const str2=document.getElementById('countries');
+str2.addEventListener('change',(x)=>{
+    const selectPais=filterPais(athletes,x.target.value);
     printScreen(selectPais)
 })
-
-const str3 = document.getElementById('medals');
-str3.addEventListener('change', (x) => {
-    const selectMedals = filterMedals(athletes, x.target.value);
+/* ORDER BY MEDALS */
+const str3=document.getElementById('medals');
+str3.addEventListener('change',(x)=>{
+    const selectMedals=filterMedals(athletes,x.target.value);
     printScreen(selectMedals)
 })
-
-const str4 = document.getElementById('Ordenador');
-str4.addEventListener('change', (x) => {
-    const selectName = sortData(athletes, x.target.value);
+  /* ORDER ALPHABETICALLY */
+const str4=document.getElementById('order');
+str4.addEventListener('change',(x)=>{
+    const selectName=sortData(athletes,x.target.value);
     printScreen(selectName)
 })
-
-const str5 = document.getElementById('Gender');
-str5.addEventListener('change', (x) => {
-    const selectG = filterG(athletes, x.target.value);
+/* FILTER FOR GENDER */ 
+const str5=document.getElementById('gender');
+str5.addEventListener('change',(x)=>{
+    const selectG=filterG(athletes,x.target.value);
     printScreen(selectG)
 })
 
+/*STATISTICS TABLE */ 
+const arrayFemale=filterG(athletes,"F");
+const arrayMale=filterG(athletes,"M");
 
-//Efectos boton
-var animateButton = function (e) {
+const arrayPercentByGender=computeStats(arrayFemale,arrayMale,athletes);
+console.log(arrayPercentByGender);
 
-    e.preventDefault;
-    //reset animation
-    e.target.classList.remove('animate');
+let stadistic =document.getElementById("stadistic");
+const estadisticsTable=`
+<table>
+<tr><th> GENERO</th> <th>PORCENTAJE </th></tr>
+<tr><td>Femenino</td><td> ${arrayPercentByGender[0]+"%"}</td>
+<tr><td>Masculino</td><td> ${arrayPercentByGender[1]+"%"}</td>
+</table>
+`
+stadistic.innerHTML+=estadisticsTable;
 
-    e.target.classList.add('animate');
-    setTimeout(function () {
-        e.target.classList.remove('animate');
-    }, 700);
-};
-
-var bubblyButtons = document.getElementsByClassName("inicio");
-for (var i = 0; i < bubblyButtons.length; i++) {
-    bubblyButtons[i].addEventListener('click', animateButton, false);
-}
-//}
-
-
-export const sum = (num1, num2) => num1 + num2;
-
-
-//carrusel
+  //carrusel
 var slideIndex = 0;
 showSlides();
 
@@ -157,30 +116,4 @@ function showSlides() {
     slides[slideIndex - 1].style.display = "block";
     setTimeout(showSlides, 2000);
 }
-var video = document.getElementById("myVideo");
-myFunction();
-var btn = document.getElementById("myBtn");
-
-function myFunction() {
-    if (video.paused) {
-        video.play();
-        btn.innerHTML = "Pause";
-    } else {
-        video.pause();
-        btn.innerHTML = "Play";
-    }
-}
-
-
-showDom("participantesF", athletes)
-
-
-function showDom(element,arr){
-    document.getElementById(element).innerHTML="";
-    for (let i=0;i<arr.length;i++){
-        document.getElementById(element).innerHTML+=
-        `<div> ${arr[i]}</div>`
-    }
-}
-
 
