@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import { filterSport, filterPais, filterMedals, sortData, filterG } from './data.js';
-=======
-import  { filterSport, filterPais,filterMedals, sortData, filterG , computeStats }  from './data.js';
->>>>>>> upstream/main
 import gameData from './data/athletes/athletes.js';
 const btninicio = document.getElementById("menuinicio");
 const btnmedallas = document.getElementById("menumedallas");
@@ -36,7 +32,6 @@ function showstadistics() {
     
 }
 
-<<<<<<< HEAD
 const btninicio = document.getElementById("menuinicio");
 const btnmedallas = document.getElementById("menumedallas");
 const btnresume = document.getElementById("menuresumen");
@@ -52,17 +47,6 @@ function showinicio() {
     document.getElementById('Resumen').style.display = 'none';
 
 }
-=======
-//export const init = () => {
-const athletes = gameData.athletes;
-
-/*const enterBtn=document.getElementById('inicio') 
-enterBtn.addEventListener('click',nombreFn)
-function nombreFn () {
-    document.getElementById('bienvenida').style.display='none';
-    document.getElementById('datos').style.display='block';  
-}*/
->>>>>>> upstream/main
 
 function showSports() {
     document.getElementById('bienvenida').style.display = 'none';
@@ -82,30 +66,6 @@ function showstadistics() {
 //export const init = () => {
 
 const athletes = gameData.athletes;
-
-//const enterBtn = document.getElementById('inicio')
-//enterBtn.addEventListener('click', nombreFn)
-//function nombreFn() {
-   // document.getElementById('bienvenida').style.display = 'none';
-   // document.getElementById('datos').style.display = 'block';
-   // document.getElementById('carrusel').style.display = 'none';
-  //  document.getElementById('videorio2016').style.display = 'block';
-
-//}
-
-
-//const enterResumen=document.getElementById('resumen') 
-//enterResumen.addEventListener('click',resumenTotal)
-//function resumenTotal () {
-//  document.getElementById('bienvenida').style.display='none';
-//document.getElementById('datos').style.display='none';
-//document.getElementById('resumen').style.display='block';
-//}
-
-
-
-
-
 
 const tableBody = document.querySelector('tbody')
 const allAthletes = (index) => {
@@ -158,39 +118,6 @@ str5.addEventListener('change', (x) => {
     printScreen(selectG)
 })
 
-<<<<<<< HEAD
-/* const str6 = document.getElementById('participantesF');
-str6.addEventListener('change', (x) => {
-    const selectG = filterG(athletes, x.target.value);
-    printScreen(selectG)
-}) */
-=======
-
-
-         /* COMPUTE STATES */
-const arrayFemale=filterG(athletes,"F");
-const arrayMale=filterG(athletes,"M");
-
-const arrayPercentByGender=computeStats(arrayFemale,arrayMale,athletes);
-console.log(arrayPercentByGender);
-
-let stadistic =document.getElementById("stadistic");
-const estadisticsTable=`
-<table>
-<thead><tr><th> GENERO</th> <th>PORCENTAJE </th></tr></thead>
-<tr><td>Femenino</td><td> ${arrayPercentByGender[0]+"%"}</td>
-<tr><td>Masculino</td><td> ${arrayPercentByGender[1]+"%"}</td>
-</table>
-`
-stadistic.innerHTML+=estadisticsTable;
-
-
-
-
-
-
->>>>>>> upstream/main
-
 
 //Efectos boton
 var animateButton = function (e) {
@@ -212,16 +139,10 @@ for (var i = 0; i < bubblyButtons.length; i++) {
 //}
 
 
-<<<<<<< HEAD
 export const sum = (num1, num2) => num1 + num2;
 
 
 //carrusel
-=======
-  export const sum = (num1, num2) => num1 + num2;
-
-  //carrusel
->>>>>>> upstream/main
 var slideIndex = 0;
 showSlides();
 
@@ -236,11 +157,7 @@ function showSlides() {
     slides[slideIndex - 1].style.display = "block";
     setTimeout(showSlides, 2000);
 }
-<<<<<<< HEAD
 var video = document.getElementById("myVideo");
-=======
-/* var video = document.getElementById("myVideo");
->>>>>>> upstream/main
 myFunction();
 var btn = document.getElementById("myBtn");
 
@@ -252,12 +169,7 @@ function myFunction() {
         video.pause();
         btn.innerHTML = "Play";
     }
-<<<<<<< HEAD
 }
-
-
-
-
 
 
 showDom("participantesF", athletes)
@@ -270,8 +182,5 @@ function showDom(element,arr){
         `<div> ${arr[i]}</div>`
     }
 }
-=======
-} */
->>>>>>> upstream/main
 
 
