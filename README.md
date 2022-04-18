@@ -649,7 +649,7 @@ Se agrego un filtro en el cual el usuario pueda elegir si ordenar desde la A-Z o
 ### 3. Prototipo
 #### 3.1 Prototipo de baja fidelidad
 El primer prototipo que realizamos de baja fidelidad, fue hecho en papel y lapicero, y quedó de la siguiente manera:
-![Imagen Text]((https://github.com/ThaNohe/LIM017-data-lovers/blob/main/src/Imag_Proy/Prot-Baja.jpg)
+![Imagen Text](https://github.com/ThaNohe/LIM017-data-lovers/blob/main/src/Imag_Proy/Prot-Baja.jpg)
 
 #### 3.2 Prototipo de alta fidelidad
 En el diseño del prototipo de alta fidelidad  pensamos en un diseño sencillo, colorido, ordenado e intuitivo tomando en cuenta las historias de usuario. El usuario podra visualizar una primera pantalla introductoria en la cual vera un boton que lo conducira a la visualizacion de los atletas junto con sus filtros de: genero, medallas, pais y orden alfabetico. Cada atleta cuenta con una tarjeta que contiene toda su información deportiva en los juegos olimpicos, además de una imagen avatar según el género del atleta.
