@@ -622,7 +622,7 @@ Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
 
  ### 1.	Presentación del proyecto
 La web creada presenta información de los diferentes Atletas que participaron en los Juegos Olímpicos Río 2016, la interfaz permite al usuario visualizar e interactuar con los datos de su interés mediante las funciones de Filtrado (filtrado por países, disciplinas, medallas y género) y Orden alfabético (A-Z y Z-A) ; se presenta también la sección de data estadística puntual relevante del evento.
-(Foto)
+https://github.com/ThaNohe/LIM017-data-lovers/tree/main/src/Imag_Proy
 ### 2.	Historias de usuario
 Historia 1 
 Problematica:
@@ -647,11 +647,13 @@ Solucion empleada :
 Se agrego un filtro en el cual el usuario pueda elegir si ordenar desde la A-Z o viceversa Z-A.
 
 ### 3. Prototipo
-* Prototipo de baja fidelidad
+#### 3.1 Prototipo de baja fidelidad
 El primer prototipo que realizamos de baja fidelidad, fue hecho en papel y lapicero, y quedó de la siguiente manera:
-#### 3.1 Prototipo de alta fidelidad
+
+#### 3.2 Prototipo de alta fidelidad
 En el diseño del prototipo de alta fidelidad  pensamos en un diseño sencillo, colorido, ordenado e intuitivo tomando en cuenta las historias de usuario. El usuario podra visualizar una primera pantalla introductoria en la cual vera un boton que lo conducira a la visualizacion de los atletas junto con sus filtros de: genero, medallas, pais y orden alfabetico. Cada atleta cuenta con una tarjeta que contiene toda su información deportiva en los juegos olimpicos, además de una imagen avatar según el género del atleta.
-#### 3.2 Vista Final
+
+#### 3.3 Vista Final
 Tomando en cuenta el diseño del prototipo de alta fidelidad se realizaron unos ajustes en el proceso tomando en cuenta los feedbacks de los coaches y compañeras, resultando asi una pagina dinamica y mas recursos visuales para el usuario.
 ### 4.	Pruebas unitarias (Test)
 Se realizaron los test de cada una de las funciones implementadas (filtrado, orden y calculo estadístico).

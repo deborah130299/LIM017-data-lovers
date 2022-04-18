@@ -162,8 +162,8 @@ top: 0;
 #data{
 display: none;
 height: 930px;
-background-image: url(data/img/fondo-rio.png);
-background-size: cover;
+/* background-image: url(data/img/fondo-rio.png);
+ */background-size: cover;
 background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: cover;
@@ -239,7 +239,7 @@ margin-bottom: 0px;
 border-bottom: solid 1px #ffffff;
 }
 
-#countries,#Gender,#medals,#disciplines,#order{
+#countries,#gender,#medals,#disciplines,#order{
 width: 19%;
 min-height: 4vh ;
 font-family: 'Capriola', sans-serif;
