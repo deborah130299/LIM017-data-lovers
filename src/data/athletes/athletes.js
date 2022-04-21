@@ -4,7 +4,7 @@ export default {
   "season": "summer",
   "city": "Rio de Janeiro",
   "athletes": [
-    /*  
+    
      { 
       "name": "Giovanni Abagnale",
       "gender": "M",
@@ -13337,7 +13337,7 @@ export default {
       "event": "Tennis Mixed Doubles",
       "medal": "Gold"
     },
-    */
+    
     {
       "name": "Peter Matthews",
       "gender": "M",
@@ -15414,7 +15414,7 @@ export default {
       "event": "Hockey Women's Hockey",
       "medal": "Bronze"
     },
-    */
+    
     {
       "name": "Penelope \"Penny\" Oleksiak",
       "gender": "F",
