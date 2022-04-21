@@ -25,7 +25,7 @@ export const filterMedals =(athletes, str3) => {
    //return athletes.filter(athletes => athletes.sport == str)
  }
 
-// export const filterByStr = (data, param, str) =>data.filter(x=>x[param]===str);
+
 
  export const sortData = (data, sortOrder) => {
    const ordenado=
@@ -46,6 +46,39 @@ export const filterMedals =(athletes, str3) => {
     return ordenado.reverse();
   }
 };
+
+  
+
+
+
+
+
+ /* export const computeStats = (data) => {
+   return 'OMG';
+ };
+  */
+
+ /* let contadores = {}
+for (let i=0 ; i<jugadores.length; i++){
+  if(!contadores.hasOwnProperty(jugadores[i].gender)) {
+    contadores[jugadores[i].gender] = 0;
+  }
+  contadores[jugadores[i].gender]++;
+}
+console.log(contadores);
+/* let contadores:
+  {M:3, F:1}; */
+/* let femenino=contadores.F
+let masculino=contadores.M
+console.log(contadores.M)
+console.log(contadores.F)
+const cantidad=jugadores.length
+console.log(cantidad)
+ function calcularPorcentaje (x,y){
+  return y/x * 100 +"%";
+}
+console.log(calcularPorcentaje(cantidad,masculino)); */ 
+
 
 
 export const computeStats =(arrayFemale,arrayMale,arrayTotal)=>{
@@ -73,5 +106,25 @@ return array;
 
 
 
+
+
+
+
+/* // Funcion de filtrar medalla por genero
+export const medalsByGender = (data, conditionGender, conditionMedal) => { 
+  let medalsG = data.filter((athletes) => athletes.gender.includes(conditionGender));
+  let genderM = medalsG.filter((medals) => medals.medal.includes(conditionMedal)).length;
+  return genderM;
+}; */
+
+
+
+/*  export const computeStats = (data,medalsF) => {
+   const contadorF=(data.filter(y=>y.gender===medalsF))
+   const count=contadorF.length;
+   const percent=Math.round((count/data.length)*100)
+   return 'percent';
+ };
+  */
 
 
