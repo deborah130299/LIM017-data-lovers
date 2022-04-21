@@ -1,37 +1,33 @@
 body {
-  /* margin: -10px; */
-  font-family: Helvetica, sans-serif;
-  margin-bottom: 0px;
-  min-height: 100vh;
-  margin-top: -10px;
-  margin-left: -10px;
-  margin-right: -10px;
-  /* padding: -10px; */
-  background-image: url(data/img/fondo-rio.png);
+font-family: Helvetica, sans-serif;
+margin-bottom: 0px;
+min-height: 100vh;
+margin-top: -10px;
+margin-left: -10px;
+margin-right: -10px;
+background-image: url(data/img/fondo-rio.png);
 align-content: center;
 background-size: cover;
 background-repeat: no-repeat;
 background-attachment: fixed;
 text-align: center;
-
-
 }
 a {
   color: #ffffff;
 }
 .logo{
-  max-height: 38px;
-    display:flex;
-    justify-content:center;
-    align-content:center;    
+max-height: 38px;
+display:flex;
+justify-content:center;
+align-content:center;    
   }
 .header {
-    background-color: #ffffff;
-    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-    position: fixed;
-    width: 100%;
-    z-index: 3;
-    margin-left: 10px;
+background-color: #ffffff;
+box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+position: fixed;
+width: 100%;
+z-index: 3;
+margin-left: 10px;
 }
 .header ul {
 margin: 0;
@@ -41,8 +37,6 @@ overflow: hidden;
 background-color: #fff;
 }
 .header li a {
- /*  display: flex;
-  align-items:center; */
 display: block;
 padding: 20px 20px;
 border-right: 1px solid #f4f4f4;
@@ -71,7 +65,6 @@ background-color: #db6a00;
 /* menu icon */
 .header .menu-icon {
 cursor: pointer;
-/* display: inline-block; */
 float: right;  
 padding: 20px 20px;
 position: relative;
@@ -142,17 +135,15 @@ top: 0;
 }
 }
 #welcome{
-    display :none;
-    height: 100%;
-   /*  background-image: url(data/img/im1.jpg); */
-    background-size: cover;
-    background-repeat:no-repeat;
-    background-position: center;
-    margin: -8px;
-    display:flex;
-    justify-content: flex-end;
-    /* align-items: center; */
-    align-items:stretch;
+display :none;
+height: 100%;
+background-size: cover;
+background-repeat:no-repeat;
+background-position: center;
+margin: -8px;
+display:flex;
+justify-content: flex-end;
+align-items:stretch;
     
     }    
 #summary{
@@ -174,40 +165,34 @@ font-size: 16px;
 }
 
 #generalContainer{
-    margin: 150px auto;
-    width: 90%;
-     /* display: flex; */
-    text-align: center;
-    justify-content: space-between;
+margin: 150px auto;
+width: 90%;
+text-align: center;
+justify-content: space-between;
 }
 
 table{
-    background-color: #ffffff;
-    /* text-align: left; */
-    border-collapse: collapse;
-    width:100%;
-   /*  margin-bottom: 30px; */
-}
+background-color: #ffffff;
+border-collapse: collapse;
+width:100%;
+ }
 th,td{
-    /* border: solid 1px rgb(48, 105, 228); */
-    padding: 10px;
-    text-align: left;
+padding: 10px;
+text-align: left;
 }
 thead{
-    background-color:#0484C4  ;
-    border-bottom: solid 5px rgb(242, 160, 7);
-    color: white;
+background-color:#0484C4  ;
+border-bottom: solid 5px rgb(242, 160, 7);
+color: white;
 }
 tr:nth-child(even){
-    background-color: #4ad4f3
-    ;
+background-color: #4ad4f3
+;
 }
-
 .container-fondo{
-    flex-direction: row-reverse;
-    background-size: 400px;
+flex-direction: row-reverse;
+background-size: 400px;
 }
-
 #start {
 width: 200px;
 height: 80px;
@@ -239,7 +224,7 @@ margin-bottom: 0px;
 border-bottom: solid 1px #ffffff;
 }
 
-#countries,#Gender,#medals,#disciplines,#order{
+#countries,#gender,#medals,#disciplines,#order{
 width: 19%;
 min-height: 4vh ;
 font-family: 'Capriola', sans-serif;
@@ -274,17 +259,13 @@ color: #ffff;
 background-color: rgb(17, 16, 16);
 }
 
-
 /*carrusel*/
 #carrusel{
 width: 100%;
-display: none;
+display: block;
 }
 .container{
-
-/*  background-color: white; */
 width:100%;
-
 position:relative;
 height:100%;
 background: cover;
@@ -364,7 +345,6 @@ animation-duration:1.5s;
 .content {
 display: block;
 position: absolute;
-/* bottom: 0; */
 background: rgba(0, 0, 0, 0.5);
 color: #f1f1f1;
 width: 100%;
@@ -389,12 +369,8 @@ p{
 #stadistic{
   margin-left: 30%;
   margin-right: 30%;
- /*  display: flex;
-  align-content: center; */
-  /* padding-left: 20%;
-  padding-right: 20%; */
   font-size: 20px;
- color: #04629d ;
+  color: #04629d ;
 }
 h4{
   color:#ffffff;

@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <title>Data Lovers</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Capriola&display=swap" rel="stylesheet">
 </head>
-<header class="header">
-  <div><img class="logo" src="data/img/rio3.png" alt="" srcset=""> </div>
-  <a href="" class="logo"> <strong>Olimpiadas Rio 2016 </strong></a>
-  <input class="menu-btn" type="checkbox" id="menu-btn" />
-  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-  <ul class="menu">
-    <li><a type="button" value="start" class="button" id="menuStart">Inicio</a></li>
-    <li><a type="button" value="medalists" class="button" id="medalsMenu">Medallas</a></li>
-    <li><a type="button" value="summary" class="button" id="menuSummary">Resumen</a></li>
-  </ul>
-</header>
+
 
 <body>
+  <header class="header">
+    <div><img class="logo" src="data/img/rio3.png" alt="" srcset=""> </div>
+    <a href="" class="logo"> <strong>Olimpiadas Rio 2016 </strong></a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li><a type="button" value="start" class="button" id="menuStart">Inicio</a></li>
+      <li><a type="button" value="medalists" class="button" id="medalsMenu">Medallas</a></li>
+      <li><a type="button" value="summary" class="button" id="menuSummary">Resumen</a></li>
+    </ul>
+  </header>
+
 
   <section id="welcome">
-
     <div id="videoRio2016">
       <video autoplay muted loop id="myVideo">
         <source src="data/img/Best of Rio 2016 _ OIympic Games.mp4" type="video/mp4">
@@ -35,7 +35,6 @@
           También se realizaron en dicha ciudad los XV Juegos Paralímpicos, entre el 7 y el 18 de septiembre del mismo
           año.
           En esta edición de los Juegos Olímpicos participaron 11 551 atletas de 207 comités olímpicos nacionales. </p>
-
       </div>
     </div>
 
@@ -195,15 +194,16 @@
         <option value="Bronze">Bronze 🥉</option>
       </select>
 
-     <!-- /* FILTER FOR GENDER */ -->
+      <!-- /* FILTER FOR GENDER */ -->
       <select id="gender" class="gender" name="gender">
         <option disabled selected>Genero</option>
         <option class="opcion" value="F" id="female">Femenino 🙋‍♀️ </option>
         <option class="opcion" value="M" id="male">Masculino 🙋‍♂️ </option>
       </select>
-
+      
       <table>
-        <thead>
+        <thead> <!-- cabecera de la tabla -->
+          <h3>RESUMEN</h3>
           <tr>
             <th>Nombre</th>
             <th>Pais</th>
@@ -213,9 +213,9 @@
           </tr>
         </thead>
 
-        <tbody>
-          <h3>RESUMEN</h3>
-        </tbody>
+        <tbody> 
+          <!-- contenido de la tabla -->
+       </tbody>
       </table>
     </div>
   </section>
@@ -237,16 +237,12 @@
         </ul>
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-
       </div>
 
     </div>
-    <h4>EL PORCENTAJE DE PARTICIPACIÓN POR GENERO FUE::</h4> 
+    <h4>EL PORCENTAJE DE PARTICIPACIÓN POR GENERO FUE:</h4>
     <div id="stadistic"></div>
   </section>
-
-
   <div class="footer">
     <p> TM © Comité Olímpico Internacional. Todos los derechos reservados ❤@RF @DM @TC❤</p>
   </div>
