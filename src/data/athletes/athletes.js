@@ -13337,6 +13337,7 @@ export default {
       "event": "Tennis Mixed Doubles",
       "medal": "Gold"
     },
+    */
     {
       "name": "Peter Matthews",
       "gender": "M",

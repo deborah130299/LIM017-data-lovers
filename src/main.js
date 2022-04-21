@@ -1,43 +1,37 @@
-
+//Importando funciones de data.js
 import  { filterSport, filterPais,filterMedals, sortData, filterG , computeStats }  from './data.js';
 
 import gameData from './data/athletes/athletes.js';
+const athletes = gameData.athletes; 
+//Trayendo ID del documento HTML
 const btnStart = document.getElementById("menuStart");
 const btnMedals = document.getElementById("medalsMenu");
 const btnresume = document.getElementById("menuSummary");
+
 // Eventos de la HomePage
 btnStart.addEventListener("click", showStart);
 btnMedals.addEventListener("click", showSports);
 btnresume.addEventListener("click", showstadistics);
-
-
-function showinicio() {
-    document.getElementById('bienvenida').style.display = 'block';
-    document.getElementById('videorio2016').style.display = 'block';
-    document.getElementById('datos').style.display = 'none';
-    document.getElementById('Resumen').style.display = 'none';
-
-=======
 function showStart() {
+=======
+//Mostrar y ocultar pantallas
+function showStart() {  //Mostrar pantallas de inicio
     document.getElementById('welcome').style.display = 'block';
-    document.getElementById('videoRio2016').style.display = 'block';
     document.getElementById('data').style.display = 'none';
     document.getElementById('summary').style.display = 'none';
 >>>>>>> upstream/main
 }
-
-function showSports() {
+function showSports() {   //Mostrar Pantallas de dAtos con filtros
     document.getElementById('welcome').style.display = 'none';
     document.getElementById('data').style.display = 'block';
     document.getElementById('summary').style.display = 'none';
 }
-
-function showstadistics() {
+function showstadistics() {  //Mostrar Pantallas de resumen (estadísticas)
     document.getElementById('welcome').style.display = 'none';
     document.getElementById('data').style.display = 'none';
     document.getElementById('summary').style.display = 'block';
-    document.getElementById('carrusel').style.display = 'block'; 
 }
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -131,6 +125,10 @@ const athletes = gameData.athletes;
 
 >>>>>>> upstream/main
 
+=======
+//export const init = () => {
+ 
+>>>>>>> upstream/main
 const tableBody = document.querySelector('tbody')
 const allAthletes = (index)=>{
     return `
@@ -143,19 +141,21 @@ const allAthletes = (index)=>{
     </tr>
 `;
 }
-//MOSTRAR EN PANTALLA
+//MOSTRAR EN PANTALLA 
 const printScreen = (mostrar) => {
     tableBody.innerHTML = '';
+    let str='';
     mostrar.forEach ((z)=>{
-        tableBody.innerHTML += allAthletes(z);
+        /* tableBody.innerHTML += allAthletes(z); */
+        str+=allAthletes(z)
     })
+    tableBody.innerHTML=str;
 }
 printScreen (athletes);
-
 /* ORDER BY DISCIPLINES */
 const str=document.getElementById('disciplines');
-str.addEventListener('change',(x)=>{
-    const selectSport=filterSport(athletes,x.target.value);
+str.addEventListener('change',(e)=>{
+    const selectSport=filterSport(athletes,e.target.value);
     printScreen(selectSport)
 })
 /* ORDER BY COUNTRIES */
@@ -206,7 +206,12 @@ const arrayFemale=filterG(athletes,"F");
 const arrayMale=filterG(athletes,"M");
 
 const arrayPercentByGender=computeStats(arrayFemale,arrayMale,athletes);
+<<<<<<< HEAD
 /* console.log(arrayPercentByGender);*/
+=======
+//console.log(arrayPercentByGender);
+
+>>>>>>> upstream/main
 let stadistic =document.getElementById("stadistic");
 const estadisticsTable=`
 <table>
@@ -216,6 +221,7 @@ const estadisticsTable=`
 </table>
 `
 stadistic.innerHTML+=estadisticsTable;
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 
@@ -260,6 +266,8 @@ export const sum = (num1, num2) => num1 + num2;
 =======
   export const sum = (num1, num2) => num1 + num2;
 
+=======
+>>>>>>> upstream/main
   //carrusel
 >>>>>>> upstream/main
 >>>>>>> d3eaf542acfce46e57499375e195db57588eb35e
@@ -268,7 +276,6 @@ export const sum = (num1, num2) => num1 + num2;
 >>>>>>> upstream/main
 var slideIndex = 0;
 showSlides();
-
 function showSlides() {
     var i;
     var slides = document.getElementsByClassName("mySlides");
