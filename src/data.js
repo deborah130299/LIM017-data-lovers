@@ -25,6 +25,8 @@ export const filterMedals =(athletes, str3) => {
    //return athletes.filter(athletes => athletes.sport == str)
  }
 
+// export const filterByStr = (data, param, str) =>data.filter(x=>x[param]===str);
+
  export const sortData = (data, sortOrder) => {
    const ordenado=
      data.sort ((a,b)=> {
@@ -73,20 +75,3 @@ return array;
 
 
 
-
-/* // Funcion de filtrar medalla por genero
-export const medalsByGender = (data, conditionGender, conditionMedal) => { 
-  let medalsG = data.filter((athletes) => athletes.gender.includes(conditionGender));
-  let genderM = medalsG.filter((medals) => medals.medal.includes(conditionMedal)).length;
-  return genderM;
-}; */
-
-
-
-/*  export const computeStats = (data,medalsF) => {
-   const contadorF=(data.filter(y=>y.gender===medalsF))
-   const count=contadorF.length;
-   const percent=Math.round((count/data.length)*100)
-   return 'percent';
- };
-  */
