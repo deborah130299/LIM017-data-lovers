@@ -622,7 +622,7 @@ Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
 
  ### 1.	Presentación del proyecto
 La web creada presenta información de los diferentes Atletas que participaron en los Juegos Olímpicos Río 2016, la interfaz permite al usuario visualizar e interactuar con los datos de su interés mediante las funciones de Filtrado (filtrado por países, disciplinas, medallas y género) y Orden alfabético (A-Z y Z-A) ; se presenta también la sección de data estadística puntual relevante del evento.
-(Foto)
+
 ### 2.	Historias de usuario
 Historia 1 
 Problematica:
@@ -647,16 +647,25 @@ Solucion empleada :
 Se agrego un filtro en el cual el usuario pueda elegir si ordenar desde la A-Z o viceversa Z-A.
 
 ### 3. Prototipo
-* Prototipo de baja fidelidad
+#### 3.1 Prototipo de baja fidelidad
 El primer prototipo que realizamos de baja fidelidad, fue hecho en papel y lapicero, y quedó de la siguiente manera:
-#### 3.1 Prototipo de alta fidelidad
+![Imagen Text](https://github.com/ThaNohe/LIM017-data-lovers/blob/main/src/Imag_Proy/Prot-Baja.jpg)
+
+#### 3.2 Prototipo de alta fidelidad
 En el diseño del prototipo de alta fidelidad  pensamos en un diseño sencillo, colorido, ordenado e intuitivo tomando en cuenta las historias de usuario. El usuario podra visualizar una primera pantalla introductoria en la cual vera un boton que lo conducira a la visualizacion de los atletas junto con sus filtros de: genero, medallas, pais y orden alfabetico. Cada atleta cuenta con una tarjeta que contiene toda su información deportiva en los juegos olimpicos, además de una imagen avatar según el género del atleta.
-#### 3.2 Vista Final
+![Imagen Text](https://github.com/ThaNohe/LIM017-data-lovers/blob/main/src/Imag_Proy/Prot-Alta1.jpg)
+![Imagen Text](https://github.com/ThaNohe/LIM017-data-lovers/blob/main/src/Imag_Proy/Prot-Alta2.jpg)
+
+#### 3.3 Vista Final
 Tomando en cuenta el diseño del prototipo de alta fidelidad se realizaron unos ajustes en el proceso tomando en cuenta los feedbacks de los coaches y compañeras, resultando asi una pagina dinamica y mas recursos visuales para el usuario.
+![Imagen Text](https://github.com/ThaNohe/LIM017-data-lovers/blob/main/src/Imag_Proy/Prot-Final1.jpg)
+![Imagen Text](https://github.com/ThaNohe/LIM017-data-lovers/blob/main/src/Imag_Proy/Prot-Final2.jpg)
+![Imagen Text](https://github.com/ThaNohe/LIM017-data-lovers/blob/main/src/Imag_Proy/Prot-Final3.jpg)
+
 ### 4.	Pruebas unitarias (Test)
 Se realizaron los test de cada una de las funciones implementadas (filtrado, orden y calculo estadístico).
 Al ejecutar nuestras pruebas unitarias nos dá una cobertura del 75% el cual se detalla en el modal.
-(Foto)
+![Imagen Text](https://github.com/ThaNohe/LIM017-data-lovers/blob/main/src/Imag_Proy/Test.jpg)
 
 ### 5.	Feedback
 El equipo tomando como referencia webs de eventos deportivos elaboro un prototipo inicial, el cual fue tomando forma con cada recomendación dada por nuestras compañeras y coaches, tales como:

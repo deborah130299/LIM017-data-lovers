@@ -206,8 +206,7 @@ const arrayFemale=filterG(athletes,"F");
 const arrayMale=filterG(athletes,"M");
 
 const arrayPercentByGender=computeStats(arrayFemale,arrayMale,athletes);
-console.log(arrayPercentByGender);
-
+/* console.log(arrayPercentByGender);*/
 let stadistic =document.getElementById("stadistic");
 const estadisticsTable=`
 <table>
